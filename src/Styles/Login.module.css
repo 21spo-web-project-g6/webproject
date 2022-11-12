@@ -1,0 +1,94 @@
+:root{
+    --primary: rgb(23, 95, 144);
+    --secondary: rgba(236, 236, 236, 0.5);
+}
+
+.form_container{
+    height: 30%;
+    width: 20%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-color: white;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 4px;
+    min-height: 20vh;
+    max-height: 50vh;
+    padding: 10px;
+}
+
+.form_group{
+    border: 1px solid rgb(36, 36, 36);
+    border-color: transparent;
+    border-radius: 100vh;
+    background: rgb(243, 243, 243);
+    padding: 1vh;
+    margin-bottom: 1vh;
+    height: 8vh;
+}
+
+.form_content{
+    padding: 10px;
+}
+
+.form_content h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.form_content input{
+    display: block;
+    padding: 0.5vh;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+.form_content input:hover{
+
+
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 100px;
+}
+
+.form_submit button{
+    display: inline-block;
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    margin-top: 2vh;
+    padding: 2px;
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.form_submit button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.form_submit button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5%;
+    transition: 0.5s;
+}
+
+.form_submit button:hover span{
+    padding-right: 25px;
+}
+
+.form_submit button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
