@@ -2,24 +2,22 @@ import LoginCSS from '../Styles/Login.module.css'
 
 export default function Login() {
   return (
-    <div className={LoginCSS.form_container}>
+    <div className={LoginCSS.container}>
         <form className={LoginCSS.form}>
-            <div className={LoginCSS.form_content}>
-                <h3 className={LoginCSS.form_title}>Log in</h3>
-                <div className={LoginCSS.form_group}>
+            <div className={LoginCSS.content}>
+                <h1 className={LoginCSS.title}>Log in</h1>
+                <div className={LoginCSS.group}>
                     <input type="email" 
-                    className={LoginCSS.form_email}
+                    className={LoginCSS.email}
                     placeholder="Email address"
-                    />                    
-                </div>
-                <div className={LoginCSS.form_group}>
+                    />  
                     <input type="password" 
-                    className={LoginCSS.form_pw}
+                    className={LoginCSS.pw}
                     placeholder="Password"
-                    />
+                    />                  
                 </div>
-                <div className={LoginCSS.form_submit}>
-                    <button type="submit">
+                <div className={LoginCSS.submit}>
+                    <button type="submit" style={{verticalAlign: "middle"}}>
                         <span>Log in</span>
                     </button>
                 </div>

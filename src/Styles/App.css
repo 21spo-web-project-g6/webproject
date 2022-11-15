@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-:root{
-  --primary: rgb(23, 95, 144);
-  --secondary: rgba(236, 236, 236, 0.5);
-}
+@import url('./Constants.css');
 
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand';
-  font-weight: bold;
+}
 
+body{
+  font-family: 'Quicksand';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--content-bg-color);
+  color: var(--p-color);
+}
+
+a{
+  color: var(--p-color);
+}
+
+a:hover{
+  color: var(--h1-color);
 }
 
 h1{
-  color: var(--primary);
+  color: var(--h1-color);
 }
 
 .App{

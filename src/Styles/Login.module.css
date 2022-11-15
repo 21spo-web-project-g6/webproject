@@ -3,43 +3,46 @@
     --secondary: rgba(236, 236, 236, 0.5);
 }
 
-.form_container{
-    height: 30%;
-    width: 20%;
+.container{
+    height: 100%;
+    width: 100%;
     display: inline-block;
     justify-content: center;
     align-items: center;
+    border: 5px solid rgb(132, 255, 0);
+
 }
 
 .form{
     background-color: white;
-    border: 1px solid rgb(141, 141, 141);
-    border-radius: 4px;
-    min-height: 20vh;
-    max-height: 50vh;
+    border: 5px solid rgb(255, 0, 0);
+    width: 40%;
     padding: 10px;
 }
 
-.form_group{
-    border: 1px solid rgb(36, 36, 36);
-    border-color: transparent;
+.group input{
+    border: 5px solid red;
+}
+
+/* .group{
+    border: 1px solid rgb(126, 55, 55);
     border-radius: 100vh;
     background: rgb(243, 243, 243);
     padding: 1vh;
     margin-bottom: 1vh;
     height: 8vh;
-}
+} */
 
-.form_content{
+.content{
     padding: 10px;
 }
 
-.form_content h3{
+.content h3{
     padding: 10px;
     text-align: center;
 }
 
-.form_content input{
+.content input{
     display: block;
     padding: 0.5vh;
     border: none;
@@ -47,18 +50,17 @@
     background-color: transparent;
 }
 
-.form_content input:hover{
-
-
+.content input:hover{
     border: 1px solid rgb(227, 227, 227);
     border-radius: 100px;
 }
 
-.form_submit button{
+.submit button{
     display: inline-block;
     border-radius: 100px;
     border: none;
     width: 100%;
+    height: 50px;
     margin-top: 2vh;
     padding: 2px;
     background-color: var(--primary);
@@ -68,14 +70,14 @@
     transition: all 0.5s;
 }
 
-.form_submit button span{
+.submit button span{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.form_submit button span:after{
+.submit button span:after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -84,11 +86,9 @@
     transition: 0.5s;
 }
 
-.form_submit button:hover span{
-    padding-right: 25px;
-}
+.submit button:hover span{padding-right: 5%;}
 
-.form_submit button:hover span:after{
-    opacity: 1;
+.submit button:hover span:after{
+    opacity: 1; 
     right: 0;
 }
