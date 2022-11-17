@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import LoginCSS from '../Styles/Login.module.css'
 
 export default function Login() {
@@ -5,7 +6,8 @@ export default function Login() {
     <div className={LoginCSS.container}>
         <form className={LoginCSS.form}>
             <div className={LoginCSS.content}>
-                <h1 className={LoginCSS.title}>Log in</h1>
+                <h1 className={LoginCSS.title}>Welcome Back</h1>
+                <h3 className={LoginCSS.subtitle}>Not a member? Register <Link to='/register'>here.</Link></h3>
                 <div className={LoginCSS.group}>
                     <input type="email" 
                     className={LoginCSS.email}
@@ -17,9 +19,7 @@ export default function Login() {
                     />                  
                 </div>
                 <div className={LoginCSS.submit}>
-                    <button type="submit" style={{verticalAlign: "middle"}}>
-                        <span>Log in</span>
-                    </button>
+                    <button type="submit">LOG IN</button>
                 </div>
             </div>
         </form>

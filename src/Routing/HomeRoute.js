@@ -4,7 +4,6 @@ import HomeCSS from '../Styles/Home.module.css'
 
 export default function HomeRoute() {
   return (
-    <div>
       <div className={HomeCSS.container}>
         <article>
           <p> 
@@ -63,6 +62,5 @@ export default function HomeRoute() {
           </p>
         </article>
       </div>
-    </div>
   )
 }

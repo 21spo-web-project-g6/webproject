@@ -1,4 +1,3 @@
-
 /* .container{
     background-image: url(../Images/bg.png);
     background-repeat: no-repeat;
@@ -12,8 +11,28 @@
 } */
 
 .container {
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1rem;
-  }
+    max-width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 5rem;
+}
+
+article{
+    display: grid;
+}
+
+p {
+    font-size: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .container {
+        max-width: 90vw;
+    }
+}

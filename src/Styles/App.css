@@ -5,13 +5,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: var(--p-color);
 }
 
 body{
   font-family: 'Quicksand';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--content-bg-color);
+  background: var(--content-bg-color);
   color: var(--p-color);
 }
 
