@@ -1,3 +1,7 @@
+//GET ja POST pyyntöjen testaukseen
+
+
+
 GET http://localhost:3001 HTTP/1.1
 
 ###

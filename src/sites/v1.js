@@ -2,16 +2,35 @@ import { chart} from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import GlobalTemperaturedata from "./data/GlobalTemperature.json";
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const URL = 'http://localhost:3001/'
 
 function App() {
 
+  const [Year, setYear] = useState('')
+  const [Annually, setAnnually] = useState('')
+  const [Hightemp, setHightemp] = useState('')
+  const [lowtemp, setLowtemp] = useState('')
+
+  useEffect(() => {
+    axios.get(URL)
+      .then((response) => {
+        console.log(response.data)
+        setYear(response.data.drinks[0].Year);
+        setAnnually(response.data.drinks[0].strAnnually);
+        setHightemp(response.data.drinks[0].strHightemp);
+        setLowtemp(response.data.drinks[0].strLowtemp);
+      })
+
+  }, [])
+  
+
   const data = {
     datasets: [
       {
         label: "Annually temperature",
-        data: [...GlobalTemperaturedata],
+        data: [URL],
         borderColor: "rgb(255, 99, 132",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
@@ -22,7 +41,7 @@ function App() {
       },
       {
         label: "Lowest temperature",
-        data: [...GlobalTemperaturedata],
+        data: [URL],
         borderColor: "#ff00ff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
@@ -33,7 +52,7 @@ function App() {
       },
       {
         label: "Highest temperature",
-        data: [...GlobalTemperaturedata],
+        data: [URL],
         borderColor: "#00ffff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
