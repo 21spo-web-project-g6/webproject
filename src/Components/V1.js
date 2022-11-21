@@ -1,66 +1,56 @@
-import { chart} from "chart.js/auto";
+import { chart } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
-import GlobalTemperaturedata from "./data/GlobalTemperature.json";
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-const URL = 'http://localhost:3001/'
+const URL = "http://localhost:3001/";
 
-function App() {
-
-  const [Year, setYear] = useState('')
-  const [Annually, setAnnually] = useState('')
-  const [Hightemp, setHightemp] = useState('')
-  const [lowtemp, setLowtemp] = useState('')
+function V1() {
+  
+  const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    axios.get(URL)
-      .then((response) => {
-        console.log(response.data)
-        setYear(response.data.drinks[0].Year);
-        setAnnually(response.data.drinks[0].strAnnually);
-        setHightemp(response.data.drinks[0].strHightemp);
-        setLowtemp(response.data.drinks[0].strLowtemp);
-      })
-
-  }, [])
-  
+    axios.get(URL).then((response) => {
+      console.log(response.data);
+      setTasks(response.data);
+    });
+  }, []);
 
   const data = {
     datasets: [
       {
         label: "Annually temperature",
-        data: [URL],
+        data: tasks,
         borderColor: "rgb(255, 99, 132",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "Annually(DEG C)", 
+          xAxisKey: "Year",
+          yAxisKey: "Annualy",
         },
         pointRadius: 1,
       },
       {
         label: "Lowest temperature",
-        data: [URL],
+        data: tasks,
         borderColor: "#ff00ff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "lowtemp", 
+          xAxisKey: "Year",
+          yAxisKey: "Lowtemp",
         },
         pointRadius: 1,
       },
       {
         label: "Highest temperature",
-        data: [URL],
+        data: tasks,
         borderColor: "#00ffff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "hightemp", 
+          xAxisKey: "Year",
+          yAxisKey: "Hightemp",
         },
         pointRadius: 2,
-      }
+      },
     ],
   };
 
@@ -85,12 +75,18 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="V1">
       <div style={{ width: "1000px" }}>
-        <Line options={options} data={data}/>
+        <Line options={options} data={data} />
+
+        {tasks.map((task) => (
+          <p>
+             {task.Year} {task.Annualy} {task.Hightemp} {task.Lowtemp}
+          </p>
+        ))}
       </div>
     </div>
   );
 }
 
-export default App;
+export default V1;
