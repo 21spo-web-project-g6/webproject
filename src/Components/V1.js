@@ -81,7 +81,7 @@ function V1() {
 
         {tasks.map((task) => (
           <p>
-             {task.Year} {task.Annualy} {task.Hightemp} {task.Lowtemp}
+            Id:{task.id} Year:{task.Year} Annually:{task.Annualy} High:{task.Hightemp} Low:{task.Lowtemp}
           </p>
         ))}
       </div>
