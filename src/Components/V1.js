@@ -27,8 +27,8 @@ function V1() {
         borderColor: "rgb(255, 99, 132",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "Year",
-          yAxisKey: "Annualy",
+          xAxisKey: "year",
+          yAxisKey: "annualy",
         },
         pointRadius: 1,
       },
@@ -38,8 +38,8 @@ function V1() {
         borderColor: "#ff00ff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "Year",
-          yAxisKey: "Lowtemp",
+          xAxisKey: "year",
+          yAxisKey: "lowtemp",
         },
         pointRadius: 1,
       },
@@ -49,8 +49,8 @@ function V1() {
         borderColor: "#00ffff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "Year",
-          yAxisKey: "Hightemp",
+          xAxisKey: "year",
+          yAxisKey: "hightemp",
         },
         pointRadius: 2,
       },
@@ -84,8 +84,8 @@ function V1() {
 
         {tasks.map((task) => (
           <p>
-            Id:{task.id} Year:{task.Year} Annually:{task.Annualy} High:
-            {task.Hightemp} Low:{task.Lowtemp}
+            Id:{task.id} Year:{task.year} Annually:{task.annualy} High:
+            {task.hightemp} Low:{task.lowtemp}
           </p>
         ))}
       </div>
