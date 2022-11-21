@@ -7,14 +7,15 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: var(--main-bg-color);
-    box-shadow: 0px 2px 2px 2px rgba(9, 9, 9, 0.23);
+    background-color: transparent;
+    /* box-shadow: 0px 5px 5px 5px rgba(9, 9, 9, 0.23); */
+    border-bottom: 0.5vh solid rgba(0, 0, 0, 0.23);
 }
 
 .pName{
     text-decoration: none;
     color: var(--h1-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
 }
 
@@ -44,7 +45,8 @@
     width: 40px;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: var(--secondary-bg-color);
+    /* background-color: var(--secondary-bg-color); */
+    background-color: transparent;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     position: absolute;
@@ -72,14 +74,13 @@
         width: 100%;
         height: calc(100vh - 60px);
         min-height: 50vh;
-        background-color: var(--secondary-bg-color);
-
+        background-color: var(--content-bg-color1);
     }
 
     .menu li{
         text-align: center;
         margin: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.5vh solid rgba(0, 0, 0, 0.23);
     }
 
     .menu li a{
@@ -88,8 +89,9 @@
         padding: 1.5rem 0;
     }
 
-    .menu li:hover{
-        background-color: #eee;
+    .menu li:hover a{
+        background-color: var(--highlight-color);
+        color: var(--main-bg-color);
     }
 
     .menu.expanded ul{

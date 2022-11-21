@@ -6,8 +6,8 @@ export default function Login() {
     <div className={LoginCSS.container}>
         <form className={LoginCSS.form}>
             <div className={LoginCSS.content}>
-                <h1 className={LoginCSS.title}>Welcome Back</h1>
-                <h3 className={LoginCSS.subtitle}>Not a member? Register <Link to='/register'>here.</Link></h3>
+                <h1 className={LoginCSS.title}>Welcome back</h1>
+                <h3 className={LoginCSS.subtitle}>Not a member? Register <Link to='/register'>HERE</Link></h3>
                 <div className={LoginCSS.group}>
                     <input type="email" 
                     className={LoginCSS.email}
@@ -19,7 +19,7 @@ export default function Login() {
                     />                  
                 </div>
                 <div className={LoginCSS.submit}>
-                    <button type="submit">LOG IN</button>
+                    <button type="submit">LOGIN</button>
                 </div>
             </div>
         </form>

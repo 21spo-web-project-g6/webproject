@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className={NavbarCSS.navigation}>
-      <Link to="/" className={NavbarCSS.pName}>WEBPROJECT</Link>
+      <Link to="/" className={NavbarCSS.pName}>Webproject</Link>
         <button 
           className={NavbarCSS.hamburger}
           onClick={() =>{

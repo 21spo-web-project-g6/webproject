@@ -6,8 +6,8 @@ export default function Register() {
     <div className={RegCSS.container}>
         <form className={RegCSS.form}>
             <div className={RegCSS.content}>
-                <h1 className={RegCSS.title}>Register to Web App</h1>
-                <h3 className={RegCSS.subtitle}>Already a member? Please login <Link to='/login'>here.</Link></h3>
+                <h1 className={RegCSS.title}>Register to the App</h1>
+                <h3 className={RegCSS.subtitle}>Already a member? Login <Link to='/login'>HERE</Link></h3>
                 <div className={RegCSS.group}>
                     <input type="email" 
                     className={RegCSS.email}
@@ -19,9 +19,7 @@ export default function Register() {
                     />                  
                 </div>
                 <div className={RegCSS.submit}>
-                    <button type="submit" style={{verticalAlign: "middle"}}>
-                        <span>Log in</span>
-                    </button>
+                    <button type="submit">REGISTER</button>
                 </div>
             </div>
         </form>
