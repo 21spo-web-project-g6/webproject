@@ -6,14 +6,17 @@ import { useEffect, useState } from "react";
 const URL = "http://localhost:3001/";
 
 function V1() {
-  
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
     axios.get(URL).then((response) => {
       console.log(response.data);
       setTasks(response.data);
+    })
+    .catch((error) => {
+      alert(error.response.data.error);
     });
+    
   }, []);
 
   const data = {
@@ -81,7 +84,8 @@ function V1() {
 
         {tasks.map((task) => (
           <p>
-            Id:{task.id} Year:{task.Year} Annually:{task.Annualy} High:{task.Hightemp} Low:{task.Lowtemp}
+            Id:{task.id} Year:{task.Year} Annually:{task.Annualy} High:
+            {task.Hightemp} Low:{task.Lowtemp}
           </p>
         ))}
       </div>
