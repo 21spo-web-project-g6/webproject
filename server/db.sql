@@ -6,21 +6,21 @@ use climatedemo;
 
 CREATE TABLE v1(
     id INT PRIMARY KEY auto_increment,
-    Year VARCHAR(255),
-    Annualy VARCHAR(255), 
-    Lowtemp VARCHAR(255), 
-    Hightemp VARCHAR(255) 
+    year VARCHAR(255),
+    annualy VARCHAR(255), 
+    lowtemp VARCHAR(255), 
+    hightemp VARCHAR(255) 
 );
 
 INSERT INTO v1 (
-    Year,
-    Annualy,
-    Lowtemp,
-    Hightemp
+    year,
+    annualy,
+    lowtemp,
+    hightemp
 )
 VALUES
     (
-        "1851",
+        "1850",
         "-0.41765878",
         "-0.589203",
         "-0.24611452"
