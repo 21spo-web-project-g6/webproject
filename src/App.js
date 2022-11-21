@@ -1,6 +1,5 @@
 import { chart } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
-import GlobalTemperaturedata from "./data/GlobalTemperature.json";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
