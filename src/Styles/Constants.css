@@ -1,0 +1,10 @@
+:root{
+    --main-bg-color: rgb(32, 34, 37);
+    --secondary-bg-color: rgb(47, 49, 54);
+    --content-bg-color1: rgb(18, 25, 27);
+    --content-bg-color2: linear-gradient(180deg, rgb(18, 24, 27) 0%,
+    rgba(29,36,49) 100%);
+    --h1-color: rgb(220, 221, 222);
+    --p-color: rgb(150, 152, 157);
+    --highlight-color: rgb(59, 165, 93);
+  }
