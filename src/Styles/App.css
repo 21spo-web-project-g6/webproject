@@ -14,6 +14,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   background: var(--content-bg-color2) center fixed;
   color: var(--p-color);
+  overflow-x: hidden;
 }
 
 a{
