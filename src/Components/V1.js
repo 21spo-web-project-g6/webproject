@@ -22,35 +22,35 @@ function V1() {
   const data = {
     datasets: [
       {
-        label: "Annually temperature",
+        label: "Anomaly Global",
         data: tasks,
         borderColor: "rgb(255, 99, 132",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "annualy",
+          xAxisKey: "Year",
+          yAxisKey: "AnomalyGlobal",
         },
-        pointRadius: 1,
+        pointRadius: 1 ,
       },
       {
-        label: "Lowest temperature",
+        label: "Anomaly Northern",
         data: tasks,
         borderColor: "#ff00ff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "lowtemp",
+          xAxisKey: "Year",
+          yAxisKey: "AnomalyNorthern",
         },
         pointRadius: 1,
       },
       {
-        label: "Highest temperature",
+        label: "Anomaly Southern",
         data: tasks,
         borderColor: "#00ffff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
         parsing: {
-          xAxisKey: "year",
-          yAxisKey: "hightemp",
+          xAxisKey: "Year",
+          yAxisKey: "AnonmalySouthern",
         },
         pointRadius: 2,
       },
@@ -65,7 +65,7 @@ function V1() {
       },
       title: {
         display: true,
-        text: "demo Global temperature",
+        text: "V1",
       },
     },
     scales: {
@@ -84,8 +84,8 @@ function V1() {
 
         {tasks.map((task) => (
           <p>
-            Id:{task.id} Year:{task.year} Annually:{task.annualy} High:
-            {task.hightemp} Low:{task.lowtemp}
+            {task.Id} {task.Year} {task.AnomalyGlobal} 
+            {task.AnomalyNorthern} {task.AnonmalySouthern}
           </p>
         ))}
       </div>

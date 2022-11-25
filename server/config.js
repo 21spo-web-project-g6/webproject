@@ -1,9 +1,9 @@
 const config = {
     db: {
         host:'localhost',
-        user: 'root',
-        password:'',
-        database:'climatedemo'
+        user: 'climate',
+        password:'climate',
+        database:'climate'
     }
 }
 
