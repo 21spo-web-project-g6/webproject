@@ -29,7 +29,7 @@ function V1() {
         
         parsing: {
           xAxisKey: "Year",
-          yAxisKey: "AnomalyGlobal",
+          yAxisKey: "AnomalyGlobalAnnually",
         },
         pointRadius: 1 ,
       },
@@ -41,7 +41,7 @@ function V1() {
         
         parsing: {
           xAxisKey: "Year",
-          yAxisKey: "AnomalyNorthern",
+          yAxisKey: "AnomalyNorthernAnnually",
         },
         pointRadius: 1,
       },
@@ -53,7 +53,7 @@ function V1() {
         
         parsing: {
           xAxisKey: "Year",
-          yAxisKey: "AnonmalySouthern",
+          yAxisKey: "AnomalySouthernAnnually",
         },
         pointRadius: 2,
       },
@@ -118,7 +118,7 @@ function V1() {
 
   return (
     <div className="V1">
-      <div style={{ width: "1000px" }}>
+      <div style={{ width: "1500px" }}>
         <Line options={options} data={data} />
 
         {tasks.map((task) => (
