@@ -11,25 +11,27 @@ function V1() {
   const [tasks2, setTasks2] = useState([]);
 
   useEffect(() => {
-    axios.get(URL1).then((response) => {
-      console.log(response.data);
-      setTasks1(response.data);
-    })
-    .catch((error) => {
-      alert(error.response.data.error);
-    });
-    
+    axios
+      .get(URL1)
+      .then((response) => {
+        console.log(response.data);
+        setTasks1(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
   }, []);
 
   useEffect(() => {
-    axios.get(URL2).then((response) => {
-      console.log(response.data);
-      setTasks2(response.data);
-    })
-    .catch((error) => {
-      alert(error.response.data.error);
-    });
-    
+    axios
+      .get(URL2)
+      .then((response) => {
+        console.log(response.data);
+        setTasks2(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
   }, []);
 
   const data = {
@@ -39,21 +41,21 @@ function V1() {
         data: tasks2,
         borderColor: "rgba(191, 8, 242, 0.8)",
         backgroundColor: "rgba(191, 8, 242, 0.8)",
-        xAxisID: 'x',
-        
+        xAxisID: "x",
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyGlobalAnnually",
         },
-        pointRadius: 1 ,
+        pointRadius: 1,
       },
       {
         label: "Annual Northern",
         data: tasks2,
         borderColor: "rgba(232, 97, 12, 0.8)",
         backgroundColor: "rgba(232, 97, 12, 0.8)",
-        xAxisID: 'x',
-        
+        xAxisID: "x",
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyNorthernAnnually",
@@ -65,8 +67,8 @@ function V1() {
         data: tasks2,
         borderColor: "rgba(30, 8, 242, 0.8)",
         backgroundColor: "rgba(30, 8, 242, 0.8)",
-        xAxisID: 'x',
-        
+        xAxisID: "x",
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalySouthernAnnually",
@@ -78,7 +80,7 @@ function V1() {
         data: tasks1,
         borderColor: "rgba(11, 232, 59, 0.8)",
         backgroundColor: "rgba(11, 232, 59, 0.8)",
-        
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyGlobalMonthly",
@@ -90,7 +92,7 @@ function V1() {
         data: tasks1,
         borderColor: "rgba(232, 11, 27, 0.8)",
         backgroundColor: "rgba(232, 11, 27, 0.8)",
-        
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyNorthernMonthly",
@@ -102,7 +104,7 @@ function V1() {
         data: tasks1,
         borderColor: "rgba(232, 211, 11, 0.8)",
         backgroundColor: "rgba(232, 211, 11, 0.8)",
-        
+
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalySouthernMonthly",
@@ -123,13 +125,14 @@ function V1() {
         text: "V1",
       },
     },
-    
+
     scales: {
-      Year : {
+      Year: {
         type: "linear",
         display: true,
         position: "right",
       },
+      
     },
   };
 
@@ -140,13 +143,15 @@ function V1() {
 
         {tasks1.map((task) => (
           <p>
-            {task.Id} {task.Year} {task.AnomalyGlobalMonthly} {task.AnomalyNorthernMonthly} {task.AnomalySouthernMonthly}     
+            {task.Id} {task.Year} {task.AnomalyGlobalMonthly}{" "}
+            {task.AnomalyNorthernMonthly} {task.AnomalySouthernMonthly}
           </p>
         ))}
 
         {tasks2.map((task2) => (
           <p>
-            {task2.Id} {task2.Year} {task2.AnomalyGlobalMonthly} {task2.AnomalyNorthernMonthly} {task2.AnomalySouthernMonthly}     
+            {task2.Id} {task2.Year} {task2.AnomalyGlobalAnnually}{" "} 
+            {task2.AnomalyNorthernAnnually} {task2.AnomalySouthernAnnually}
           </p>
         ))}
       </div>
