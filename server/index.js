@@ -13,10 +13,22 @@ app.use(express.urlencoded({extended: false}))
 
 const port = 3001
 
-app.get("/",async (req,res) => {
+app.get("/1",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
-    const [result,] = await connection.execute('SELECT * from v1annually')
+    const [result,] = await connection.execute('SELECT * FROM v1monthly')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+app.get("/2",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v1annually')
     if (!result) result=[] //If there is no data, return empty array
     res.status(200).json(result)
   } catch(err) {
