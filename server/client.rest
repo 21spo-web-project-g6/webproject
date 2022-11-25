@@ -13,4 +13,4 @@ Content-Type: application/json
 }
 
 ### Delete route using DELETE
-Delete http://localhost:3001/delete/5 HTTP/1.1
+Delete http://localhost:3001/delete/7 HTTP/1.1

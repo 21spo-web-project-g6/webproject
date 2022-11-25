@@ -1,4 +1,4 @@
-//     /server    npm run devStart
+// OHJE:    cd server, npm run devStart
 
 const express = require ('express')
 const cors = require ('cors')
@@ -16,7 +16,7 @@ const port = 3001
 app.get("/",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
-    const [result,] = await connection.execute('SELECT * from v1')
+    const [result,] = await connection.execute('SELECT * from v1annually')
     if (!result) result=[] //If there is no data, return empty array
     res.status(200).json(result)
   } catch(err) {
