@@ -22,10 +22,11 @@ function V1() {
   const data = {
     datasets: [
       {
-        label: "Anomaly Global",
+        label: "Annual Global",
         data: tasks,
         borderColor: "rgb(255, 99, 132",
         backgroundColor: "rgba(255, 99, 132, 0.5",
+        
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyGlobal",
@@ -33,10 +34,11 @@ function V1() {
         pointRadius: 1 ,
       },
       {
-        label: "Anomaly Northern",
+        label: "Annual Northern",
         data: tasks,
         borderColor: "#ff00ff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
+        
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyNorthern",
@@ -44,16 +46,53 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Anomaly Southern",
+        label: "Annual Southern",
         data: tasks,
         borderColor: "#00ffff",
         backgroundColor: "rgba(255, 99, 132, 0.5",
+        
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnonmalySouthern",
         },
         pointRadius: 2,
       },
+      // {
+      //   label: "Monthly Global",
+      //   data: tasks,
+      //   borderColor: "#00ffff",
+      //   backgroundColor: "rgba(255, 99, 132, 0.5",
+        
+      //   parsing: {
+      //     xAxisKey: " YearMonthly",
+      //     yAxisKey: "AnonmalyGlobal",
+      //   },
+      //   pointRadius: 2,
+      // },
+      // {
+      //   label: "Anomaly Southern",
+      //   data: tasks,
+      //   borderColor: "#00ffff",
+      //   backgroundColor: "rgba(255, 99, 132, 0.5",
+        
+      //   parsing: {
+      //     xAxisKey: " YearMonthly",
+      //     yAxisKey: "AnonmalyNorthern",
+      //   },
+      //   pointRadius: 2,
+      // },
+      // {
+      //   label: "AnomalySouthern",
+      //   data: tasks,
+      //   borderColor: "#00ffff",
+      //   backgroundColor: "rgba(255, 99, 132, 0.5",
+        
+      //   parsing: {
+      //     xAxisKey: "YearMonthly",
+      //     yAxisKey: "AnomalySouthern",
+      //   },
+      //   pointRadius: 1,
+      // },
     ],
   };
 
@@ -69,7 +108,7 @@ function V1() {
       },
     },
     scales: {
-      Year: {
+      x: {
         type: "linear",
         display: true,
         position: "right",
@@ -84,8 +123,7 @@ function V1() {
 
         {tasks.map((task) => (
           <p>
-            {task.Id} {task.Year} {task.AnomalyGlobal} 
-            {task.AnomalyNorthern} {task.AnonmalySouthern}
+            {task.Id} {task.YearMonthly} {task.AnomalySouthern}
           </p>
         ))}
       </div>

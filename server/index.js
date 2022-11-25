@@ -29,7 +29,7 @@ app.post("/new",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
     //Execute prepared statement
-    const [result,] = await connection.execute('INSERT INTO v1 (year, annualy, lowtemp, hightemp) VALUES (?, ?, ?, ?)',
+    const [result,] = await connection.execute('INSERT INTO v1annually (year, annualy, lowtemp, hightemp) VALUES (?, ?, ?, ?)',
     [req.body.year, req.body.annualy, req.body.lowtemp, req.body.hightemp]);
     res.status(200).json({id:result.insertId})
   } catch(err) {
@@ -42,7 +42,7 @@ app.delete("/delete/:id",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
     //Execute prepared statement
-    await connection.execute('DELETE FROM v1 WHERE id = ?',[req.params.id])
+    await connection.execute('DELETE FROM v1annually WHERE id = ?',[req.params.id])
     res.status(200).json({id:req.params.id})
   } catch(err) {
     //Return status code 500 and a error message to client.
