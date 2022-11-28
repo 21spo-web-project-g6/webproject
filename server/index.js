@@ -49,6 +49,66 @@ app.get("/3",async (req,res) => {
   }
 })
 
+app.get("/4",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v3monthly')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+app.get("/5",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v3annually')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+app.get("/6",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v4de08')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+app.get("/7",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v4de082')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+app.get("/8",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v4dss')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
 app.get("/9",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)

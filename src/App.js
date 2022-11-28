@@ -4,6 +4,7 @@ import Home from './Routing/HomeRoute'
 import Login from './Routing/LoginRoute'
 import Register from './Routing/RegRoute'
 import V1 from "./Routing/V1";
+import V3 from "./Routing/V3";
 import V5 from "./Routing/V5";
 import Navbar from './Components/Navbar';
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path="/V1" element={<V1 />} />
+        <Route path="/V3" element={<V3 />} />
         <Route path="/V5" element={<V5 />} />
       </Routes>
     </div>
