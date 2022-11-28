@@ -1,15 +1,19 @@
 import { chart } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+import { Chart } from 'chart.js';
+import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 const URL1 = "http://localhost:3001/1";
 const URL2 = "http://localhost:3001/2";
+const URL3 = "http://localhost:3001/3";
 
 function V1() {
   const [tasks1, setTasks1] = useState([]);
   const [tasks2, setTasks2] = useState([]);
-
+  const [tasks3, setTasks3] = useState([]);
+ 
   useEffect(() => {
     axios
       .get(URL1)
@@ -34,15 +38,26 @@ function V1() {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get(URL3)
+      .then((response) => {
+        console.log(response.data);
+        setTasks3(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
+  }, []);
+
   const data = {
     datasets: [
       {
-        label: "Annual Global",
+        label: "Annual Global Anomaly",
         data: tasks2,
         borderColor: "rgba(191, 8, 242, 0.8)",
         backgroundColor: "rgba(191, 8, 242, 0.8)",
-        xAxisID: "x",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyGlobalAnnually",
@@ -50,12 +65,11 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Annual Northern",
+        label: "Annual Northern Anomaly",
         data: tasks2,
         borderColor: "rgba(232, 97, 12, 0.8)",
         backgroundColor: "rgba(232, 97, 12, 0.8)",
-        xAxisID: "x",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyNorthernAnnually",
@@ -63,12 +77,11 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Annual Southern",
+        label: "Annual Southern Anomaly",
         data: tasks2,
         borderColor: "rgba(30, 8, 242, 0.8)",
         backgroundColor: "rgba(30, 8, 242, 0.8)",
-        xAxisID: "x",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalySouthernAnnually",
@@ -76,11 +89,11 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Monthly Global",
+        label: "Monthly Global Anomaly",
         data: tasks1,
         borderColor: "rgba(11, 232, 59, 0.8)",
         backgroundColor: "rgba(11, 232, 59, 0.8)",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyGlobalMonthly",
@@ -88,11 +101,11 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Monthly Northern",
+        label: "Monthly Northern Anomaly",
         data: tasks1,
         borderColor: "rgba(232, 11, 27, 0.8)",
         backgroundColor: "rgba(232, 11, 27, 0.8)",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalyNorthernMonthly",
@@ -100,14 +113,26 @@ function V1() {
         pointRadius: 1,
       },
       {
-        label: "Monthly Southern",
+        label: "Monthly Southern Anomaly",
         data: tasks1,
         borderColor: "rgba(232, 211, 11, 0.8)",
         backgroundColor: "rgba(232, 211, 11, 0.8)",
-
+        borderWidth: 2,
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "AnomalySouthernMonthly",
+        },
+        pointRadius: 1,
+      },
+      {
+        label: "V2 Northern Hemisphere 2,000-year temperature reconstruction",
+        data: tasks3,
+        borderColor: "rgba(240, 20, 134, 0.8)",
+        backgroundColor: "rgba(240, 20, 134, 0.8)",
+        borderWidth: 2,
+        parsing: {
+          xAxisKey: "Year",
+          yAxisKey: "T",
         },
         pointRadius: 1,
       },
@@ -115,33 +140,49 @@ function V1() {
   };
 
   const options = {
+    
     responsive: true,
-    Plugins: {
+    plugins: {
       legend: {
         position: "top",
       },
       title: {
         display: true,
-        text: "V1",
+        text: "V1 Global historical surface temperature anomalies from January 1850 onwards + V2 Northern Hemisphere 2,000-year temperature reconstruction",
       },
     },
 
     scales: {
-      Year: {
+      yAxes: {
         type: "linear",
-        display: true,
-        position: "right",
+          
+      },
+      xAxes: {
+        type: "time",
+        displayFormats: {
+          Year: 'Y',
+          
+          } ,
+        position: "bottom",
       },
       
     },
   };
 
   return (
-    <div className="V1">
-      <div style={{ width: "2000px" }}>
-        <Line options={options} data={data} />
+    <div style={{ width: "1000x" }}>
+      <Line options={options} data={data} />
+      <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link to V1 data sources.</a> </h1>
+      <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link to V2 data sources.</a> </h1>
+      <h1> <a href="https://www.nature.com/articles/nature03265">Full study of V2 which includes data measurement description.</a> </h1>
+    </div>
+  );
+}
 
-        {tasks1.map((task) => (
+export default V1;
+
+//DATAN TARKISTUKSEEN
+/* {tasks1.map((task) => (
           <p>
             {task.Id} {task.Year} {task.AnomalyGlobalMonthly}{" "}
             {task.AnomalyNorthernMonthly} {task.AnomalySouthernMonthly}
@@ -153,10 +194,11 @@ function V1() {
             {task2.Id} {task2.Year} {task2.AnomalyGlobalAnnually}{" "} 
             {task2.AnomalyNorthernAnnually} {task2.AnomalySouthernAnnually}
           </p>
-        ))}
-      </div>
-    </div>
-  );
-}
+        ))} */
 
-export default V1;
+        /* {tasks3.map((task3) => (
+          <p>
+            {task3.Id} {task3.Year} {task3.T}
+            
+          </p>
+        ))} */
