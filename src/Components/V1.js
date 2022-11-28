@@ -148,7 +148,7 @@ function V1() {
       },
       title: {
         display: true,
-        text: "V1 Global historical surface temperature anomalies from January 1850 onwards",
+        text: "V1 Global historical surface temperature anomalies from January 1850 onwards + V2 Northern Hemisphere 2,000-year temperature reconstruction",
       },
     },
 
@@ -174,7 +174,7 @@ function V1() {
       <Line options={options} data={data} />
       <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link to V1 data sources.</a> </h1>
       <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link to V2 data sources.</a> </h1>
-      <h1> <a href="https://www.nature.com/articles/nature03265">full study of V2 which includes data measurement description.</a> </h1>
+      <h1> <a href="https://www.nature.com/articles/nature03265">Full study of V2 which includes data measurement description.</a> </h1>
     </div>
   );
 }
