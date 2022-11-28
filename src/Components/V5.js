@@ -54,7 +54,13 @@ function V5() {
     },
 
     scales: {
-      yAxes: {
+      y: {
+        ticks: {
+            // Include a ppmv sign in the ticks
+            callback: function(value, index, ticks) {
+                return value + ' ppmv';
+            }
+        },
         type: "linear",
         title: {
             color: 'red',
@@ -66,9 +72,9 @@ function V5() {
       },
       x: {
         ticks: {
-            // Include a BC sign in the ticks
+            // Include a BP sign in the ticks
             callback: function(value, index, ticks) {
-                return value + 'BC';
+                return value + ' BP';
             }
         },
         min: 2342,
@@ -81,7 +87,7 @@ function V5() {
         title: {
             color: 'red',
             display: true,
-            text: 'Year (BC)'
+            text: 'BP (Before Present)'
           },
         position: "bottom",
       },
@@ -92,8 +98,9 @@ function V5() {
   return (
     <div style={{ width: "1000x" }}>
       <Line options={options} data={data} />
-      <h1> <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link to V5 data sources.</a> </h1>
-      <h1> <a href="https://www.nature.com/articles/nature03265">Full study of V5 which includes data measurement description.</a> </h1>
+      <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
+      <h1> <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link to data sources.</a> </h1>
+      <h1> <a href="https://www.nature.com/articles/nature03265">Full details of Vostok Ice Core.</a> </h1>
     </div>
   );
 }
