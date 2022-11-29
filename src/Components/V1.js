@@ -155,9 +155,16 @@ function V1() {
     scales: {
       yAxes: {
         type: "linear",
+        
           
       },
       xAxes: {
+        title: {
+          color: "red",
+          display: true,
+          text: "Year",
+          position: "bottom",
+        },
         type: "time",
         displayFormats: {
           Year: 'Y',

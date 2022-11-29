@@ -5,9 +5,9 @@ import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const URL = "http://localhost:3001/9";
+const URL = "http://localhost:3001/10";
 
-function V5() {
+function V6() {
   const [tasks, setTasks] = useState([]);
   
   useEffect(() => {
@@ -26,13 +26,13 @@ function V5() {
   const data = {
     datasets: [
       {
-        label: "V5 Vostok Ice Core CO2 measurements, 417160 - 2342 years ",
+        label: "Ice core 800k year composite study CO2 measurements",
         data: tasks,
-        borderColor: "rgba(191, 8, 242, 0.8)",
-        backgroundColor: "rgba(191, 8, 242, 0.8)",
-        borderWidth: 3,
+        borderColor: "rgba(150, 255, 247, 0.8)",
+        backgroundColor: "rgba(150, 255, 247, 0.8)",
+        borderWidth: 2,
         parsing: {
-          xAxisKey: "AirAge",
+          xAxisKey: "AgeGasCalBP",
           yAxisKey: "Co2",
         },
         pointRadius: 1,
@@ -49,7 +49,7 @@ function V5() {
       },
       title: {
         display: true,
-        text: "V5",
+        text: "V6",
       },
     },
 
@@ -65,29 +65,23 @@ function V5() {
         title: {
             color: 'red',
             display: true,
-            text: 'CO2 concentration ppmv'
+            text: 'CO2 concnertation ppmv'
           },
         
           
       },
       x: {
-        ticks: {
-            // Include a BP sign in the ticks
-            callback: function(value, index, ticks) {
-                return value + ' BP';
-            }
-        },
-        min: 2342,
-        max: 417160,
+        min: -803918.87,
+        max: 2002,
         type: "linear",
-        reverse: true,
+        reverse: false,
         displayFormats: {
           AirAge: 'Airage',
         },
         title: {
             color: 'red',
             display: true,
-            text: 'BP (Before Present)'
+            text: 'Year'
           },
         position: "bottom",
       },
@@ -98,14 +92,14 @@ function V5() {
   return (
     <div style={{ width: "1000x" }}>
       <Line options={options} data={data} />
-      <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
-      <h1> <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link to data sources.</a> </h1>
-      <h1> <a href="https://www.nature.com/articles/nature03265">Full details of Vostok Ice Core.</a> </h1>
+      <p>Ice core 800k year composite study shows carbon dioxide data from over 800k years. </p>
+      <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt">Link to data sources.</a> </h1>
+      <h1> <a href="https://www.ncei.noaa.gov/access/paleo-search/study/17975">Full details.</a> </h1>
     </div>
   );
 }
 
-export default V5;
+export default V6;
 
 //DATAN TESTAUKSEEN
 // {tasks.map((task) => (
