@@ -33,7 +33,7 @@ function V7() {
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
-          yAxisID: 'y',
+          yAxisID: 'y1',
         },
         pointRadius: 1,
       },
@@ -66,20 +66,19 @@ function V7() {
     },
 
     scales: {
-      y: {
-        id:"y",
+      y1: {
+        id:"y1",
         type: "linear",
-          position: "left",
-        
+        display: true,
+        position: "left",
       },
       y2: {
         id:"y2",
         type: "linear",
-          position: "right",
-        
+        display: true,
+        position: "right",
       },
       x: {
-        
         type: "linear",
         position: "bottom",
       },

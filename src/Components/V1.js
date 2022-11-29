@@ -155,12 +155,7 @@ function V1() {
     scales: {
       yAxes: {
         type: "linear",
-        title: {
-          color: "red",
-          display: true,
-          text: "Anomaly Deg(c)",
-          position: "left",
-        },
+        
           
       },
       xAxes: {
