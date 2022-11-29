@@ -21,8 +21,9 @@ function V7() {
         alert(error.response.data.error);
       });
   }, []);
-
+  
   const data = {
+    labels: "Year",
     datasets: [
       {
         label: "Ice core 800k year composite study CO2 measurements",
@@ -96,7 +97,7 @@ function V7() {
       <h1><a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">Full details.</a></h1>
       {tasks.map((task) => (
         <p>
-          {task.Id} {task.TempChange} {task.Co2}
+          {task.Id} {task.Year} {task.TempChange} {task.Co2}
         </p>
       ))}
     </div>
