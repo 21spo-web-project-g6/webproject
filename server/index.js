@@ -133,6 +133,17 @@ app.get("/10",async (req,res) => {
   }
 })
 
+app.get("/11",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM v7')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
 
 
 

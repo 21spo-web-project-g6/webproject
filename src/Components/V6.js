@@ -71,7 +71,6 @@ function V6() {
           
       },
       x: {
-        
         min: -803918.87,
         max: 2002,
         type: "linear",

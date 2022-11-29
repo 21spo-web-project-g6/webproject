@@ -65,7 +65,7 @@ function V5() {
         title: {
             color: 'red',
             display: true,
-            text: 'CO2 concnertation ppmv'
+            text: 'CO2 concentration ppmv'
           },
         
           
