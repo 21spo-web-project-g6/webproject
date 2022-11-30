@@ -8,6 +8,7 @@ import V3 from "./Routing/V3";
 import V5 from "./Routing/V5";
 import V6 from "./Routing/V6";
 import V7 from "./Routing/V7";
+import V8 from "./Routing/V8";
 import Navbar from './Components/Navbar';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/V5" element={<V5 />} />
         <Route path="/V6" element={<V6 />} />
         <Route path="/V7" element={<V7 />} />
+        <Route path="/V8" element={<V8 />} />
       </Routes>
     </div>
   );
