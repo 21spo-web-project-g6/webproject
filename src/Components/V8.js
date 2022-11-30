@@ -26,12 +26,13 @@ function V8() {
     labels: tasks,
     datasets: [
       {
-        label: "Afganistan",
+        label: "Afghanistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
-          yAxisKey: "TempChange",
+          yAxisKey: "USA",
         },
         pointRadius: 1,
       },
@@ -39,6 +40,7 @@ function V8() {
         label: "Albania",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -49,6 +51,7 @@ function V8() {
         label: "Algeria",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -59,6 +62,7 @@ function V8() {
         label: "Andorra",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -69,6 +73,7 @@ function V8() {
         label: "Anguilla & Barbuda",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -79,6 +84,7 @@ function V8() {
         label: "Argentina",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -89,6 +95,7 @@ function V8() {
         label: "Armenia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -99,6 +106,7 @@ function V8() {
         label: "Aruba",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -109,6 +117,7 @@ function V8() {
         label: "Australia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -119,6 +128,7 @@ function V8() {
         label: "Austria",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -129,6 +139,7 @@ function V8() {
         label: "Azerbaijan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -139,6 +150,7 @@ function V8() {
         label: "Bahamas",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -149,6 +161,7 @@ function V8() {
         label: "Bahrain",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -159,6 +172,7 @@ function V8() {
         label: "Bangladesh",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -169,6 +183,7 @@ function V8() {
         label: "Afganistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -179,6 +194,7 @@ function V8() {
         label: "Barbados",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -189,6 +205,7 @@ function V8() {
         label: "Belarus",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -199,6 +216,7 @@ function V8() {
         label: "Belgium",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -209,6 +227,7 @@ function V8() {
         label: "Belize",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -219,6 +238,7 @@ function V8() {
         label: "Benin",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -229,6 +249,7 @@ function V8() {
         label: "Bermuda",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -239,6 +260,7 @@ function V8() {
         label: "Bhutan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -249,6 +271,7 @@ function V8() {
         label: "Bonaire, Saint Estatius, Saba",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -259,6 +282,7 @@ function V8() {
         label: "Bosnia and Herzegovina",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -269,6 +293,7 @@ function V8() {
         label: "Botswana",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -279,6 +304,7 @@ function V8() {
         label: "Brazil",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -289,6 +315,7 @@ function V8() {
         label: "British Virgin Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -299,6 +326,7 @@ function V8() {
         label: "Brunei Darussalam",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -309,6 +337,7 @@ function V8() {
         label: "Bulgaria",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -319,6 +348,7 @@ function V8() {
         label: "Burkina Faso",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -329,6 +359,7 @@ function V8() {
         label: "Burundi",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -339,6 +370,7 @@ function V8() {
         label: "Cambodia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -349,6 +381,7 @@ function V8() {
         label: "Canada",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -359,6 +392,7 @@ function V8() {
         label: "Cape Verde",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -369,6 +403,7 @@ function V8() {
         label: "Central African Repuplic",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -379,6 +414,7 @@ function V8() {
         label: "Chad",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -389,6 +425,7 @@ function V8() {
         label: "Chile",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -399,6 +436,7 @@ function V8() {
         label: "China",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -409,6 +447,7 @@ function V8() {
         label: "Colombia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -419,6 +458,7 @@ function V8() {
         label: "Comoros",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -429,6 +469,7 @@ function V8() {
         label: "Congo",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -439,6 +480,7 @@ function V8() {
         label: "Cook Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -449,6 +491,7 @@ function V8() {
         label: "Costa Rica",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -459,6 +502,7 @@ function V8() {
         label: "Côte d'Ivoire",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -469,6 +513,7 @@ function V8() {
         label: "Croatia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -479,6 +524,7 @@ function V8() {
         label: "Cuba",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -489,6 +535,7 @@ function V8() {
         label: "Curaçao",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -499,6 +546,7 @@ function V8() {
         label: "Cyprus",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -509,6 +557,7 @@ function V8() {
         label: "Czech Repuplic",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -519,6 +568,7 @@ function V8() {
         label: "North Korea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -529,6 +579,7 @@ function V8() {
         label: "Democratic Republic of the Congo",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -539,6 +590,7 @@ function V8() {
         label: "Denmark",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -549,6 +601,7 @@ function V8() {
         label: "Djibouti",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -559,6 +612,7 @@ function V8() {
         label: "Dominica",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -569,6 +623,7 @@ function V8() {
         label: "Dominican Repuplic",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -579,6 +634,7 @@ function V8() {
         label: "Ecuador",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -589,6 +645,7 @@ function V8() {
         label: "Egypt",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -599,6 +656,7 @@ function V8() {
         label: "El Salvador",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -609,6 +667,7 @@ function V8() {
         label: "Equatorial Guinea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -619,6 +678,7 @@ function V8() {
         label: "Eritrea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -629,6 +689,7 @@ function V8() {
         label: "Estonia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -639,6 +700,7 @@ function V8() {
         label: "Ethiopia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -649,6 +711,7 @@ function V8() {
         label: "Faroe Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -659,6 +722,7 @@ function V8() {
         label: "Micronesia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -669,6 +733,7 @@ function V8() {
         label: "Fiji",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -679,6 +744,7 @@ function V8() {
         label: "Finland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -689,6 +755,7 @@ function V8() {
         label: "France",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -699,6 +766,7 @@ function V8() {
         label: "French Guiana",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -709,6 +777,7 @@ function V8() {
         label: "French Polynesia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -719,6 +788,7 @@ function V8() {
         label: "Gabon",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -729,6 +799,7 @@ function V8() {
         label: "Gambia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -739,6 +810,7 @@ function V8() {
         label: "Georgia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -749,6 +821,7 @@ function V8() {
         label: "Germany",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -759,6 +832,7 @@ function V8() {
         label: "Ghana",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -769,6 +843,7 @@ function V8() {
         label: "Greece",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -779,6 +854,7 @@ function V8() {
         label: "Greenland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -789,6 +865,7 @@ function V8() {
         label: "Grenada",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -799,6 +876,7 @@ function V8() {
         label: "Guadeloupe",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -809,6 +887,7 @@ function V8() {
         label: "Guatemala",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -819,6 +898,7 @@ function V8() {
         label: "Guinea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -829,6 +909,7 @@ function V8() {
         label: "Guinea-Bissau",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -839,6 +920,7 @@ function V8() {
         label: "Guyana",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -849,6 +931,7 @@ function V8() {
         label: "Haiti",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -859,6 +942,7 @@ function V8() {
         label: "Honduras",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -869,6 +953,7 @@ function V8() {
         label: "Hong Kong",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -879,6 +964,7 @@ function V8() {
         label: "Hungary",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -889,6 +975,7 @@ function V8() {
         label: "Iceland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -899,6 +986,7 @@ function V8() {
         label: "India",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -909,6 +997,7 @@ function V8() {
         label: "Indonesia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -919,6 +1008,7 @@ function V8() {
         label: "Iraq",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -929,6 +1019,7 @@ function V8() {
         label: "Ireland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -939,6 +1030,7 @@ function V8() {
         label: "Iran",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -949,6 +1041,7 @@ function V8() {
         label: "Israel",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -959,6 +1052,7 @@ function V8() {
         label: "Italy",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -969,6 +1063,7 @@ function V8() {
         label: "Jamaica",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -979,6 +1074,7 @@ function V8() {
         label: "Japan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -989,6 +1085,7 @@ function V8() {
         label: "Jordan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -999,6 +1096,7 @@ function V8() {
         label: "Kazakhstan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1009,6 +1107,7 @@ function V8() {
         label: "Kenya",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1019,6 +1118,7 @@ function V8() {
         label: "Kiribati",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1029,6 +1129,7 @@ function V8() {
         label: "Kosovo",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1039,6 +1140,7 @@ function V8() {
         label: "Kuwait",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1049,6 +1151,7 @@ function V8() {
         label: "Kyrgyzstan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1059,6 +1162,7 @@ function V8() {
         label: "Laos",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1069,6 +1173,7 @@ function V8() {
         label: "Latvia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1079,6 +1184,7 @@ function V8() {
         label: "Lebanon",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1089,6 +1195,7 @@ function V8() {
         label: "Lesotho",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1099,6 +1206,7 @@ function V8() {
         label: "Liberia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1109,6 +1217,7 @@ function V8() {
         label: "Libya",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1119,6 +1228,7 @@ function V8() {
         label: "Liechtenstein",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1129,6 +1239,7 @@ function V8() {
         label: "Lithuania",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1139,6 +1250,7 @@ function V8() {
         label: "Luxembourg",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1149,6 +1261,7 @@ function V8() {
         label: "Macao",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1159,6 +1272,7 @@ function V8() {
         label: "North Macedonia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1169,6 +1283,7 @@ function V8() {
         label: "Madagascar",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1179,6 +1294,7 @@ function V8() {
         label: "Malawi",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1189,6 +1305,7 @@ function V8() {
         label: "Maldives",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1199,6 +1316,7 @@ function V8() {
         label: "Mali",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1209,6 +1327,7 @@ function V8() {
         label: "Malta",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1219,6 +1338,7 @@ function V8() {
         label: "Marshall Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1229,6 +1349,7 @@ function V8() {
         label: "Martinique",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1239,6 +1360,7 @@ function V8() {
         label: "Mauritania",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1249,6 +1371,7 @@ function V8() {
         label: "Mauritius",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1259,6 +1382,7 @@ function V8() {
         label: "Mayotte",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1269,6 +1393,7 @@ function V8() {
         label: "Mexico",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1279,6 +1404,7 @@ function V8() {
         label: "Mongolia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1289,6 +1415,7 @@ function V8() {
         label: "Montenegro",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1299,6 +1426,7 @@ function V8() {
         label: "Montserrat",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1309,6 +1437,7 @@ function V8() {
         label: "Morocco",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1319,6 +1448,7 @@ function V8() {
         label: "Mozambique",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1329,6 +1459,7 @@ function V8() {
         label: "Myanmar",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1339,6 +1470,7 @@ function V8() {
         label: "Namibia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1349,6 +1481,7 @@ function V8() {
         label: "Nauru",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1359,6 +1492,7 @@ function V8() {
         label: "Nepal",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1369,6 +1503,7 @@ function V8() {
         label: "Netherlands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1379,6 +1514,7 @@ function V8() {
         label: "New Caledonia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1389,6 +1525,7 @@ function V8() {
         label: "New Zealand",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1399,6 +1536,7 @@ function V8() {
         label: "Nicaragua",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1409,6 +1547,7 @@ function V8() {
         label: "Niger",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1419,6 +1558,7 @@ function V8() {
         label: "Nigeria",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1429,6 +1569,7 @@ function V8() {
         label: "Niue",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1439,6 +1580,7 @@ function V8() {
         label: "Norway",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1449,6 +1591,7 @@ function V8() {
         label: "Afganistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1459,6 +1602,7 @@ function V8() {
         label: "Occupied Palestinian Territory",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1469,6 +1613,7 @@ function V8() {
         label: "Oman",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1479,6 +1624,7 @@ function V8() {
         label: "Pakistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1489,6 +1635,7 @@ function V8() {
         label: "Palau",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1499,6 +1646,7 @@ function V8() {
         label: "Panama",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1509,6 +1657,7 @@ function V8() {
         label: "Papua New  Guinea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1519,6 +1668,7 @@ function V8() {
         label: "Paraguay",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1529,6 +1679,7 @@ function V8() {
         label: "Peru",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1539,6 +1690,7 @@ function V8() {
         label: "Philippines",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1549,6 +1701,7 @@ function V8() {
         label: "Bolivia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1559,6 +1712,7 @@ function V8() {
         label: "Poland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1569,6 +1723,7 @@ function V8() {
         label: "Portugal",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1579,6 +1734,7 @@ function V8() {
         label: "Qatar",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1589,6 +1745,7 @@ function V8() {
         label: "Cameroon",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1599,6 +1756,7 @@ function V8() {
         label: "South Korea",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1609,6 +1767,7 @@ function V8() {
         label: "Moldova",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1619,6 +1778,7 @@ function V8() {
         label: "South Sudan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1629,6 +1789,7 @@ function V8() {
         label: "Sudan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1639,6 +1800,7 @@ function V8() {
         label: "Réunion",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1649,6 +1811,7 @@ function V8() {
         label: "Romania",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1659,6 +1822,7 @@ function V8() {
         label: "Russian Federation",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1669,6 +1833,7 @@ function V8() {
         label: "Rwanda",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1679,6 +1844,7 @@ function V8() {
         label: "Saint Helena",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1689,6 +1855,7 @@ function V8() {
         label: "Saint Lucia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1699,6 +1866,7 @@ function V8() {
         label: "Sint Maarten (Dutch part)",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1709,6 +1877,7 @@ function V8() {
         label: "Samoa",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1719,6 +1888,7 @@ function V8() {
         label: "Sao Tome and Principe",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1729,6 +1899,7 @@ function V8() {
         label: "Saudi Arabia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1739,6 +1910,7 @@ function V8() {
         label: "Senegal",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1749,6 +1921,7 @@ function V8() {
         label: "Serbia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1759,6 +1932,7 @@ function V8() {
         label: "Seychelles",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1769,6 +1943,7 @@ function V8() {
         label: "Sierra Leone",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1779,6 +1954,7 @@ function V8() {
         label: "Singapore",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1789,6 +1965,7 @@ function V8() {
         label: "Slovakia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1799,6 +1976,7 @@ function V8() {
         label: "Slovenia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1809,6 +1987,7 @@ function V8() {
         label: "Solomon Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1819,6 +1998,7 @@ function V8() {
         label: "Somalia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1829,6 +2009,7 @@ function V8() {
         label: "South Africa",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1839,6 +2020,7 @@ function V8() {
         label: "Spain",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1849,6 +2031,7 @@ function V8() {
         label: "Sri Lanka",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1859,6 +2042,7 @@ function V8() {
         label: "Saint Kitts and Nevis",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1869,6 +2053,7 @@ function V8() {
         label: "Saint Pierre and Miquelon",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1879,6 +2064,7 @@ function V8() {
         label: "Saint Vincent and the Grenadines",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1889,6 +2075,7 @@ function V8() {
         label: "Suriname",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1899,6 +2086,7 @@ function V8() {
         label: "Swaziland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1909,6 +2097,7 @@ function V8() {
         label: "Sweden",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1919,6 +2108,7 @@ function V8() {
         label: "Swizerland",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1929,6 +2119,7 @@ function V8() {
         label: "Syria",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1939,6 +2130,7 @@ function V8() {
         label: "Taiwan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1949,6 +2141,7 @@ function V8() {
         label: "Tajikistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1959,6 +2152,7 @@ function V8() {
         label: "Thailand",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1969,6 +2163,7 @@ function V8() {
         label: "Timor-Leste",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1979,6 +2174,7 @@ function V8() {
         label: "Togo",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1989,6 +2185,7 @@ function V8() {
         label: "Tonga",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -1999,6 +2196,7 @@ function V8() {
         label: "Trinidad and Tobago",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2009,6 +2207,7 @@ function V8() {
         label: "Tunisia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2019,6 +2218,7 @@ function V8() {
         label: "Turkey",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2029,6 +2229,7 @@ function V8() {
         label: "Turkmenistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2039,6 +2240,7 @@ function V8() {
         label: "Turks and Caicos Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2049,6 +2251,7 @@ function V8() {
         label: "Tuvalu",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2059,6 +2262,7 @@ function V8() {
         label: "Uganda",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2069,6 +2273,7 @@ function V8() {
         label: "Ukraine",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2079,6 +2284,7 @@ function V8() {
         label: "United Arab Emirates",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2089,6 +2295,7 @@ function V8() {
         label: "United Kingdom",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2099,6 +2306,7 @@ function V8() {
         label: "Tanzania",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2109,6 +2317,7 @@ function V8() {
         label: "USA",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2119,6 +2328,7 @@ function V8() {
         label: "Uruguay",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2129,6 +2339,7 @@ function V8() {
         label: "Uzbekistan",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2139,6 +2350,7 @@ function V8() {
         label: "Vanuatu",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2149,6 +2361,7 @@ function V8() {
         label: "Venezuela",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2159,6 +2372,7 @@ function V8() {
         label: "Viet Nam",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2169,6 +2383,7 @@ function V8() {
         label: "Wallis and Futuna Islands",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2179,6 +2394,7 @@ function V8() {
         label: "Yemen",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2189,6 +2405,7 @@ function V8() {
         label: "Zambia",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2199,6 +2416,7 @@ function V8() {
         label: "Zimbabwe",
         data: tasks,
         backgroundColor: "rgba(255, 141, 96, 0.8)",
+        borderColor: "rgba(255, 141, 96, 0.8)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
@@ -2225,8 +2443,6 @@ function V8() {
       y: {
         type: "linear",
         position: "left",
-        min: 0,
-        max: 1800,
         title: {
             display: true,
             color: "red",
