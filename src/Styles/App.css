@@ -16,8 +16,13 @@ body{
   color: var(--p-color);
 }
 
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+
 a{
-  color: var(--p-color);
+  color: var(--highlight-color);
 }
 
 a:hover{
@@ -28,7 +33,3 @@ h1{
   color: var(--h1-color);
 }
 
-.App{
-  width: 100vw;
-  height: 100vh;
-}
