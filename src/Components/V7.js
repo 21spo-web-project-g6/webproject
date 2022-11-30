@@ -21,32 +21,33 @@ function V7() {
         alert(error.response.data.error);
       });
   }, []);
-
+  
   const data = {
+    labels: tasks,
     datasets: [
       {
-        label: "Ice core 800k year composite study CO2 measurements",
+        label: "Change in Global Average Surface Temperature (GAST) from present (0-5ka average)",
         data: tasks,
         borderColor: "rgba(255, 141, 96, 0.8)",
         backgroundColor: "rgba(255, 141, 96, 0.8)",
         borderWidth: 1,
+        yAxisID: 'y1',
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "TempChange",
-          yAxisID: 'y1',
         },
         pointRadius: 1,
       },
       {
-        label: "Co2",
+        label: "Carbon dioxide (ppm) 0-800k BP",
         data: tasks,
         borderColor: "rgba(15, 44, 233, 0.8)",
         backgroundColor: "rgba(15, 44, 233, 0.8)",
         borderWidth: 1,
+        yAxisID: 'y2',
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "Co2",
-          yAxisID: 'y2',
         },
         pointRadius: 1,
       },
@@ -67,20 +68,35 @@ function V7() {
 
     scales: {
       y1: {
-        id:"y1",
         type: "linear",
-        display: true,
         position: "left",
+        min: -7.5,
+        max: 2.5,
+        title: {
+            display: true,
+            color: "red",
+            text: 'Temperature change'
+          }
       },
       y2: {
-        id:"y2",
         type: "linear",
-        display: true,
         position: "right",
+        min:140,
+        max:300,
+        title: {
+            display: true,
+            color: "red",
+            text: 'Carbon dioxide (ppm)'
+          },
       },
       x: {
         type: "linear",
         position: "bottom",
+        title: {
+            display: true,
+            color: "red",
+            text: 'Before Present (BP)'
+          },
       },
     },
   };
@@ -94,11 +110,6 @@ function V7() {
       </p>
       <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link to data sources.</a></h1>
       <h1><a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">Full details.</a></h1>
-      {tasks.map((task) => (
-        <p>
-          {task.Id} {task.TempChange} {task.Co2}
-        </p>
-      ))}
     </div>
   );
 }
@@ -106,3 +117,8 @@ function V7() {
 export default V7;
 
 //DATAN TESTAUKSEEN
+// {tasks.map((task) => (
+//     <p>
+//       {task.Id} {task.Year} {task.TempChange} {task.Co2}
+//     </p>
+//   ))}
