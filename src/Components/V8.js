@@ -2272,8 +2272,8 @@ function V8() {
       {
         label: "United Kingdom",
         data: tasks,
-        backgroundColor: "rgb(200, 16, 46)",
-        borderColor: "rgb(255, 255, 255)",
+        backgroundColor: "rgb(255, 255, 255)",
+        borderColor: "rgb(200, 16, 46)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "United_Kingdom",
@@ -2421,6 +2421,8 @@ function V8() {
       y: {
         type: "linear",
         position: "left",
+        min: 0,
+        max: 10700,
         title: {
             display: true,
             color: "red",

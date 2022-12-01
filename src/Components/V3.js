@@ -151,13 +151,6 @@ function V3() {
       plugins: {
         legend: {
           position: "top",
-          color: "rgb(150, 152, 157)",
-          labels:{
-            color: "rgb(150, 152, 157)",
-            font: {
-              size: 1
-            },
-          },
         },
         title: {
           display: true,
