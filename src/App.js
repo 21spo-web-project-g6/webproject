@@ -3,12 +3,14 @@ import {Routes, Route } from "react-router-dom"
 import Home from './Routing/HomeRoute'
 import Login from './Routing/LoginRoute'
 import Register from './Routing/RegRoute'
-import V1 from "./Routing/V1";
-import V3 from "./Routing/V3";
-import V5 from "./Routing/V5";
-import V6 from "./Routing/V6";
-import V7 from "./Routing/V7";
-import V8 from "./Routing/V8";
+
+import V1 from "./Routing/V1Route";
+import V3 from "./Routing/V3Route";
+import V5 from "./Routing/V5Route";
+import V6 from "./Routing/V6Route";
+import V7 from "./Routing/V7Route";
+import V8 from "./Routing/V8Route";
+
 import Navbar from './Components/Navbar';
 
 export default function App() {
