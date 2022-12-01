@@ -31,4 +31,9 @@ export const SidebarData = [
         path: "/v7",
         icon: <MdHome />
     },
+    {
+        title: "Visualization 8",
+        path: "/v8",
+        icon: <MdHome />
+    },
 ]
