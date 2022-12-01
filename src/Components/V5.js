@@ -4,6 +4,7 @@ import { Chart } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from '../Styles/Graph.module.css'
 
 const URL = "http://localhost:3001/9";
 
@@ -96,11 +97,11 @@ function V5() {
   };
 
   return (
-    <div style={{ width: "1000x" }}>
+    <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
-      <h1> <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link to data sources.</a> </h1>
-      <h1> <a href="https://www.nature.com/articles/nature03265">Full details of Vostok Ice Core.</a> </h1>
+      <h1>Link to <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">V5</a> data sources. </h1>
+      <h1>Full study of  <a href="https://www.nature.com/articles/nature03265">V5</a> which includes data measurement description.</h1>
     </div>
   );
 }

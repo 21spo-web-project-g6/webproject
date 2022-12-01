@@ -1,10 +1,13 @@
-import React from 'react'
+import Sidebar from '../Components/Sidebar'
 import V5 from '../Components/V5'
 
-export default function RegRoute() {
+import GraphCSS from '../Styles/Graph.module.css'
+
+export default function V5Route() {
   return (
-    <>
+    <div className={GraphCSS.wrapper}>
+      <Sidebar />
       <V5 />
-    </>
+    </div>
   )
 }

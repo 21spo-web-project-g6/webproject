@@ -11,12 +11,12 @@ import V6 from "./Routing/V6Route";
 import V7 from "./Routing/V7Route";
 import V8 from "./Routing/V8Route";
 
-import Navbar from './Components/Navbar';
+
+
 
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />

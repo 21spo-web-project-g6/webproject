@@ -5,6 +5,8 @@ import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import GraphCSS from '../Styles/Graph.module.css'
+
 const URL = "http://localhost:3001/10";
 
 function V6() {
@@ -90,7 +92,7 @@ function V6() {
   };
 
   return (
-    <div style={{ width: "1000x" }}>
+    <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>Ice core 800k year composite study shows carbon dioxide data from over 800k years. </p>
       <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt">Link to data sources.</a> </h1>
