@@ -9,6 +9,10 @@ import V3 from "./Routing/V3Route";
 import V5 from "./Routing/V5Route";
 import V6 from "./Routing/V6Route";
 import V7 from "./Routing/V7Route";
+import V8 from "./Routing/V8Route";
+
+
+
 
 export default function App() {
   return (
@@ -22,6 +26,7 @@ export default function App() {
         <Route path="/V5" element={<V5 />} />
         <Route path="/V6" element={<V6 />} />
         <Route path="/V7" element={<V7 />} />
+        <Route path="/V8" element={<V8 />} />
       </Routes>
     </div>
   );
