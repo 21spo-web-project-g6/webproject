@@ -74,6 +74,7 @@ function V7() {
         position: "left",
         min: -7.5,
         max: 2.5,
+        
         title: {
             display: true,
             color: "red",
@@ -107,8 +108,7 @@ function V7() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>
-        Ice core 800k year composite study shows carbon dioxide data from over
-        800k years.
+      Evolution of global temperature over the past two million years
       </p>
       <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
       <h1>Full <a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">details.</a></h1>

@@ -51,7 +51,6 @@ function V9() {
   }, []);
 
   const data = {
-    labels: tasks,
     datasets: [
       {
         label: "Energy",
@@ -60,25 +59,25 @@ function V9() {
         backgroundColor: "rgba(255, 141, 96, 0.8)",
 
       },
-      {
-        label: "Industrial processes",
-        data: tasks,
-        borderColor: "rgba(15, 44, 233, 0.8)",
-        backgroundColor: "rgba(15, 44, 233, 0.8)",          
-      },
-      {
-        label: "Waste",
-        data: tasks,
-        borderColor: "rgba(15, 44, 233, 0.8)",
-        backgroundColor: "rgba(15, 44, 233, 0.8)",
+      // {
+      //   label: "Industrial processes",
+      //   data: tasks,
+      //   borderColor: "rgba(15, 44, 233, 0.8)",
+      //   backgroundColor: "rgba(15, 44, 233, 0.8)",          
+      // },
+      // {
+      //   label: "Waste",
+      //   data: tasks,
+      //   borderColor: "rgba(15, 44, 233, 0.8)",
+      //   backgroundColor: "rgba(15, 44, 233, 0.8)",
         
-      },
-      {
-        label: "Agriculture, Forestry & Land Use (AFOLU)",
-        data: tasks,
-        borderColor: "rgba(15, 44, 233, 0.8)",
-        backgroundColor: "rgba(15, 44, 233, 0.8)",
-      },
+      // },
+      // {
+      //   label: "Agriculture, Forestry & Land Use (AFOLU)",
+      //   data: tasks,
+      //   borderColor: "rgba(15, 44, 233, 0.8)",
+      //   backgroundColor: "rgba(15, 44, 233, 0.8)",
+      // },
     ],
   };
 
@@ -91,8 +90,6 @@ function V9() {
     <div className={GraphCSS.container}>
       <Pie options={config} data={data} />
       <p>
-        Ice core 800k year composite study shows carbon dioxide data from over
-        800k years.
       </p>
       <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
       <h1>Full <a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">details.</a></h1>
