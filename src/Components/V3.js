@@ -197,10 +197,10 @@ function V3() {
     return (
       <div className={GraphCSS.container}>
         <Line options={options} data={data} />
-        <h1>Link to <a href="https://gml.noaa.gov/ccgg/trends/">V3</a> data measurement description.</h1>
-        <h1>Link to <a href="https://gml.noaa.gov/ccgg/about/co2_measurements.html">V3</a> data sources.</h1>
-        <h1>Link to <a href="https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html">V4</a> data measurement description.</h1>
-        <h1>Link to <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat">V4</a> data source.</h1>
+        <h1><a href="https://gml.noaa.gov/ccgg/trends/">Link</a> to V3 data measurement description.</h1>
+        <h1><a href="https://gml.noaa.gov/ccgg/about/co2_measurements.html">Link</a> to V3 data sources.</h1>
+        <h1><a href="https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html">Link</a> to V4 data measurement description.</h1>
+        <h1><a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat">Link</a> to V4 data source.</h1>
       </div>
     );
   }

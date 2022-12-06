@@ -5,6 +5,8 @@ import "chartjs-adapter-date-fns";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import GraphCSS from '../Styles/Graph.module.css'
+
 const URL = "http://localhost:3001/12";
 
 function V8() {
@@ -2443,7 +2445,7 @@ function V8() {
   };
 
   return (
-    <div style={{ width: "1000x" }}>
+    <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>
       Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020

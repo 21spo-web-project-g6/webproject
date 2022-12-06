@@ -59,12 +59,12 @@ function V5() {
         ticks: {
             // Include a ppmv sign in the ticks
             callback: function(value, index, ticks) {
-                return value + ' ppmv';
+                return value;
             }
         },
         type: "linear",
         title: {
-            color: 'red',
+            color: '#b2becd',
             display: true,
             text: 'CO2 concentration ppmv'
           },
@@ -75,7 +75,7 @@ function V5() {
         ticks: {
             // Include a BP sign in the ticks
             callback: function(value, index, ticks) {
-                return value + ' BP';
+                return value;
             }
         },
         min: 2342,
@@ -86,7 +86,7 @@ function V5() {
           AirAge: 'Airage',
         },
         title: {
-            color: 'red',
+            color: '#b2becd',
             display: true,
             text: 'BP (Before Present)'
           },

@@ -58,6 +58,7 @@
     padding: 5%;
     border: none;
     outline: 0;
+    color: var(--p-color);
     background-color: transparent;
     border: 0.2rem solid var(--highlight-color);
     border-radius: 50vw;

@@ -55,6 +55,11 @@ export default function Register() {
                 <h1 className={RegCSS.title}>Register to the App</h1>
                 <h3 className={RegCSS.subtitle}>Already a member? Login <Link to='/login'>HERE</Link></h3>
                 <div className={RegCSS.group}>
+                    <input type="text" 
+                    name="user"
+                    className={RegCSS.user}
+                    placeholder="Username"
+                    />
                     <input type="email" 
                     name="email"
                     className={RegCSS.email}

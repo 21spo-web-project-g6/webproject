@@ -112,7 +112,7 @@ app.post('/register', (req, res) => {
 
   users.push(newUser);
 
-  console.log(users);
+  //console.log(users);
 
   res.send("OK");
 })

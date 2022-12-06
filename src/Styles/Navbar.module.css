@@ -1,8 +1,12 @@
 @import './Constants.css';
 
+a{
+    color: var(--link-c);
+}
+
 .navigation {
     height: 60px;
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     position: relative;

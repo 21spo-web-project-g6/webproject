@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--p-color);
 }
 
 body{
@@ -19,17 +18,38 @@ body{
 .App{
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 a{
-  color: var(--highlight-color);
+  color: var(--h1-color);
+  text-decoration: none;
 }
 
 a:hover{
-  color: var(--h1-color);
+  color: var(--link2-c);
 }
 
 h1{
   color: var(--h1-color);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

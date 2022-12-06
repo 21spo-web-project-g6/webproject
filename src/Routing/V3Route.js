@@ -5,9 +5,11 @@ import GraphCSS from '../Styles/Graph.module.css'
 
 export default function V3Route() {
   return (
-    <div className={GraphCSS.wrapper}>
-      <Sidebar />
-      <V3 />
-    </div>
+    <>
+      <div className={GraphCSS.wrapper}>
+        <Sidebar />
+        <V3 />
+      </div>
+    </>
   )
 }
