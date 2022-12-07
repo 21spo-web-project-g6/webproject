@@ -1,0 +1,15 @@
+### Route using GET
+GET http://localhost:3001 HTTP/1.1
+
+### New route using POST
+Post http://localhost:3001/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "526216ae-5777-4114-bd2d-f5f2675293e9",
+    "mail": "arttu@demo.com",
+    "password": "$2a$06$BWdNNpMXJZwU4.R0YC3xWuP826JFHyoj.LKrNNC7cXCAercI5B.Xq",   
+}
+
+### Delete route using DELETE
+Delete http://localhost:3001/delete/7 HTTP/1.1
