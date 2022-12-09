@@ -107,10 +107,10 @@ function V9() {
     <div className={GraphCSS.container}>
     <Doughnut options={options} data={data} />
     <p>
-    Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020
+    CO2 emission percentages by sectors. 
     </p>
-    <h1><a href="https://data.icos-cp.eu/licence_accept?ids=%5B%22lApekzcmd4DRC34oGXQqOxbJ%22%5D">Link to data sources.</a></h1>
-    <h1><a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2021">Full details.</a></h1>
+    <h1><a href="https://ourworldindata.org/uploads/2020/09/Global-GHG-Emissions-by-sector-based-on-WRI-2020.xlsx">Link to data sources.</a></h1>
+    <h1><a href="https://ourworldindata.org/emissions-by-sector#co2-emissions-by-sector">Full details.</a></h1>
   </div>
   );
 };
