@@ -227,7 +227,7 @@ function V3() {
         yAxes: {
           type: "linear",
           title: {
-            color: "red",
+            color: "white",
             display: true,
             text: "Co2 Mole Fraction (ppm)",
             position: "left",
@@ -237,7 +237,7 @@ function V3() {
         xAxes: {
           type: "linear",
           title: {
-            color: "red",
+            color: "white",
             display: true,
             text: "Year",
             position: "bottom",
