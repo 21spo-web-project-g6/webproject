@@ -2413,7 +2413,7 @@ function V8() {
       },
       title: {
         display: true,
-        text: "V7",
+        text: "V8",
       },
     },
 
