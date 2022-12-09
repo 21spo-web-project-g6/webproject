@@ -1,20 +1,17 @@
-import './Styles/App.css';
 import {Routes, Route } from "react-router-dom"
 import Home from './Routing/HomeRoute'
-import Login from './Routing/LoginRoute'
-import Register from './Routing/RegRoute'
+import Login from './Routing/Auth/LoginRoute'
+import Register from './Routing/Auth/RegRoute'
 
-import V1 from "./Routing/V1Route";
-import V3 from "./Routing/V3Route";
-import V5 from "./Routing/V5Route";
-import V6 from "./Routing/V6Route";
-import V7 from "./Routing/V7Route";
-import V8 from "./Routing/V8Route";
-import V9 from "./Routing/V9Route";
+import V1 from "./Routing/Graphs/V1Route";
+import V3 from "./Routing/Graphs/V3Route";
+import V5 from "./Routing/Graphs/V5Route";
+import V6 from "./Routing/Graphs/V6Route";
+import V7 from "./Routing/Graphs/V7Route";
+import V8 from "./Routing/Graphs/V8Route";
+import V9 from "./Routing/Graphs/V9Route";
 
-
-
-
+import './App.css';
 
 export default function App() {
   return (
@@ -34,4 +31,3 @@ export default function App() {
     </div>
   );
 }
-
