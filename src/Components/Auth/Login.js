@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import LoginCSS from '../Styles/Login.module.css'
+import LoginCSS from './Login.module.css'
 
 export default function Login() {
 

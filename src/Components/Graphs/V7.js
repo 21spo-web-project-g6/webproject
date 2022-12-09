@@ -4,8 +4,10 @@ import { Chart } from "chart.js";
 import "chartjs-adapter-date-fns";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from './Graph.module.css'
 
-import GraphCSS from '../Styles/Graph.module.css'
+
+
 
 const URL = "http://localhost:3001/11";
 
@@ -74,7 +76,6 @@ function V7() {
         position: "left",
         min: -7.5,
         max: 2.5,
-        
         title: {
             display: true,
             color: "red",
@@ -108,8 +109,9 @@ function V7() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>
-      Evolution of global temperature over the past two million years
-      </p>
+        Ice core 800k year composite study shows carbon dioxide data from over
+        800k years.
+     </p>
       <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
       <h1>Full <a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">details.</a></h1>
     </div>

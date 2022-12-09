@@ -7,38 +7,44 @@ export const SidebarData = [
         icon: <MdHome />
     },
     {
-        title: "Visualization 1",
+        title: "V1+V2",
         path: "/v1",
         icon: <MdHome />
     },
     {
-        title: "Visualization 3",
+
+        title: "V3+V4",
         path: "/v3",
         icon: <MdHome />
     },
     {
-        title: "Visualization 5",
+
+        title: "V5",   
         path: "/v5",
         icon: <MdHome />
     },
     {
-        title: "Visualization 6",
+
+        title: "V6",       
         path: "/v6",
         icon: <MdHome />
     },
     {
-        title: "Visualization 7",
+
+        title: "V7",     
         path: "/v7",
         icon: <MdHome />
     },
     {
-        title: "Visualization 8",
+
+        title: "V8",
         path: "/v8",
         icon: <MdHome />
-    },
+    },    
     {
-        title: "Visualization 9",
+        title: "V9",
         path: "/v9",
         icon: <MdHome />
     },
+
 ]

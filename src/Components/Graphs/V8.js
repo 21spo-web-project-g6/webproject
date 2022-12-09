@@ -5,6 +5,8 @@ import "chartjs-adapter-date-fns";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import GraphCSS from './Graph.module.css'
+
 const URL = "http://localhost:3001/12";
 
 function V8() {
@@ -35,6 +37,7 @@ function V8() {
           yAxisKey: "Afghanistan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Albania",
@@ -46,6 +49,7 @@ function V8() {
           yAxisKey: "Albania",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Algeria",
@@ -57,6 +61,7 @@ function V8() {
           yAxisKey: "Algeria",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Andorra",
@@ -68,6 +73,7 @@ function V8() {
           yAxisKey: "Andorra",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Anguilla & Barbuda",
@@ -79,6 +85,7 @@ function V8() {
           yAxisKey: "Antigua_and_Barbuda",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Argentina",
@@ -90,6 +97,7 @@ function V8() {
           yAxisKey: "Argentina",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Armenia",
@@ -101,6 +109,7 @@ function V8() {
           yAxisKey: "Armenia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Aruba",
@@ -112,6 +121,7 @@ function V8() {
           yAxisKey: "Aruba",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Australia",
@@ -123,6 +133,7 @@ function V8() {
           yAxisKey: "Australia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Austria",
@@ -134,6 +145,7 @@ function V8() {
           yAxisKey: "Austria",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Azerbaijan",
@@ -145,6 +157,7 @@ function V8() {
           yAxisKey: "Azerbaijan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bahamas",
@@ -156,6 +169,7 @@ function V8() {
           yAxisKey: "Bahamas",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bahrain",
@@ -167,6 +181,7 @@ function V8() {
           yAxisKey: "Bahrain",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bangladesh",
@@ -178,6 +193,7 @@ function V8() {
           yAxisKey: "Bangladesh",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Barbados",
@@ -189,6 +205,7 @@ function V8() {
           yAxisKey: "Barbados",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Belarus",
@@ -200,6 +217,7 @@ function V8() {
           yAxisKey: "Belarus",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Belgium",
@@ -211,6 +229,7 @@ function V8() {
           yAxisKey: "Belgium",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Belize",
@@ -222,6 +241,7 @@ function V8() {
           yAxisKey: "Belize",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Benin",
@@ -233,6 +253,7 @@ function V8() {
           yAxisKey: "Benin",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bermuda",
@@ -244,6 +265,7 @@ function V8() {
           yAxisKey: "Bermuda",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bhutan",
@@ -255,6 +277,7 @@ function V8() {
           yAxisKey: "Bhutan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bonaire, Saint Estatius, Saba",
@@ -266,6 +289,7 @@ function V8() {
           yAxisKey: "Bonaire_Saint_Eustatius_and_Saba",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bosnia and Herzegovina",
@@ -277,6 +301,7 @@ function V8() {
           yAxisKey: "Bosnia_and_Herzegovina",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Botswana",
@@ -288,6 +313,7 @@ function V8() {
           yAxisKey: "Botswana",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Brazil",
@@ -299,6 +325,7 @@ function V8() {
           yAxisKey: "Brazil",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "British Virgin Islands",
@@ -310,6 +337,7 @@ function V8() {
           yAxisKey: "British_Virgin_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Brunei Darussalam",
@@ -321,6 +349,7 @@ function V8() {
           yAxisKey: "Brunei_Darussalam",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bulgaria",
@@ -332,6 +361,7 @@ function V8() {
           yAxisKey: "Bulgaria",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Burkina Faso",
@@ -343,6 +373,7 @@ function V8() {
           yAxisKey: "Burkina_Faso",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Burundi",
@@ -354,6 +385,7 @@ function V8() {
           yAxisKey: "Burundi",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cambodia",
@@ -365,6 +397,7 @@ function V8() {
           yAxisKey: "Cambodia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Canada",
@@ -376,6 +409,7 @@ function V8() {
           yAxisKey: "Canada",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cape Verde",
@@ -387,6 +421,7 @@ function V8() {
           yAxisKey: "Cape_Verde",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Central African Repuplic",
@@ -398,6 +433,7 @@ function V8() {
           yAxisKey: "Central_African_Republic",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Chad",
@@ -409,6 +445,7 @@ function V8() {
           yAxisKey: "Chad",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Chile",
@@ -420,6 +457,7 @@ function V8() {
           yAxisKey: "Chile",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "China",
@@ -431,6 +469,7 @@ function V8() {
           yAxisKey: "China",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Colombia",
@@ -442,6 +481,7 @@ function V8() {
           yAxisKey: "Colombia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Comoros",
@@ -453,6 +493,7 @@ function V8() {
           yAxisKey: "Comoros",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Congo",
@@ -464,6 +505,7 @@ function V8() {
           yAxisKey: "Congo",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cook Islands",
@@ -475,6 +517,7 @@ function V8() {
           yAxisKey: "Cook_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Costa Rica",
@@ -486,6 +529,7 @@ function V8() {
           yAxisKey: "Costa_Rica",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Côte d'Ivoire",
@@ -497,6 +541,7 @@ function V8() {
           yAxisKey: "Côte_dIvoire",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Croatia",
@@ -508,6 +553,7 @@ function V8() {
           yAxisKey: "Croatia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cuba",
@@ -519,6 +565,7 @@ function V8() {
           yAxisKey: "Cuba",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Curaçao",
@@ -530,6 +577,7 @@ function V8() {
           yAxisKey: "Curaçao",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cyprus",
@@ -541,6 +589,7 @@ function V8() {
           yAxisKey: "Cyprus",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Czech Repuplic",
@@ -552,6 +601,7 @@ function V8() {
           yAxisKey: "Czech_Republic",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "North Korea",
@@ -563,6 +613,7 @@ function V8() {
           yAxisKey: "North_Korea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Democratic Republic of the Congo",
@@ -574,6 +625,7 @@ function V8() {
           yAxisKey: "Democratic_Republic_of_the_Congo",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Denmark",
@@ -585,6 +637,7 @@ function V8() {
           yAxisKey: "Denmark",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Djibouti",
@@ -596,6 +649,7 @@ function V8() {
           yAxisKey: "Djibouti",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Dominica",
@@ -607,6 +661,7 @@ function V8() {
           yAxisKey: "Dominica",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Dominican Repuplic",
@@ -618,6 +673,7 @@ function V8() {
           yAxisKey: "Dominican_Republic",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Ecuador",
@@ -629,6 +685,7 @@ function V8() {
           yAxisKey: "Ecuador",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Egypt",
@@ -640,6 +697,7 @@ function V8() {
           yAxisKey: "Egypt",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "El Salvador",
@@ -651,6 +709,7 @@ function V8() {
           yAxisKey: "El_Salvador",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Equatorial Guinea",
@@ -662,6 +721,7 @@ function V8() {
           yAxisKey: "Equatorial_Guinea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Eritrea",
@@ -673,6 +733,7 @@ function V8() {
           yAxisKey: "Eritrea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Estonia",
@@ -684,6 +745,7 @@ function V8() {
           yAxisKey: "Estonia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Ethiopia",
@@ -695,6 +757,7 @@ function V8() {
           yAxisKey: "Ethiopia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Faroe Islands",
@@ -706,6 +769,7 @@ function V8() {
           yAxisKey: "Faeroe_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Micronesia",
@@ -717,6 +781,7 @@ function V8() {
           yAxisKey: "Micronesia_Federated_States_of",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Fiji",
@@ -728,6 +793,7 @@ function V8() {
           yAxisKey: "Fiji",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Finland",
@@ -739,6 +805,7 @@ function V8() {
           yAxisKey: "Finland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "France",
@@ -750,6 +817,7 @@ function V8() {
           yAxisKey: "France",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "French Guiana",
@@ -761,6 +829,7 @@ function V8() {
           yAxisKey: "French_Guiana",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "French Polynesia",
@@ -772,6 +841,7 @@ function V8() {
           yAxisKey: "French_Polynesia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Gabon",
@@ -783,6 +853,7 @@ function V8() {
           yAxisKey: "Gabon",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Gambia",
@@ -794,6 +865,7 @@ function V8() {
           yAxisKey: "Gambia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Georgia",
@@ -805,6 +877,7 @@ function V8() {
           yAxisKey: "Georgia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Germany",
@@ -816,6 +889,7 @@ function V8() {
           yAxisKey: "Germany",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Ghana",
@@ -827,6 +901,7 @@ function V8() {
           yAxisKey: "Ghana",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Greece",
@@ -838,6 +913,7 @@ function V8() {
           yAxisKey: "Greece",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Greenland",
@@ -849,6 +925,7 @@ function V8() {
           yAxisKey: "Greenland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Grenada",
@@ -860,6 +937,7 @@ function V8() {
           yAxisKey: "Grenada",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Guadeloupe",
@@ -871,6 +949,7 @@ function V8() {
           yAxisKey: "Guadeloupe",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Guatemala",
@@ -882,6 +961,7 @@ function V8() {
           yAxisKey: "Guatemala",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Guinea",
@@ -893,6 +973,7 @@ function V8() {
           yAxisKey: "Guinea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Guinea-Bissau",
@@ -904,6 +985,7 @@ function V8() {
           yAxisKey: "GuineaBissau",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Guyana",
@@ -915,6 +997,7 @@ function V8() {
           yAxisKey: "Guyana",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Haiti",
@@ -926,6 +1009,7 @@ function V8() {
           yAxisKey: "Haiti",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Honduras",
@@ -937,6 +1021,7 @@ function V8() {
           yAxisKey: "Honduras",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Hong Kong",
@@ -948,6 +1033,7 @@ function V8() {
           yAxisKey: "Hong_Kong",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Hungary",
@@ -959,6 +1045,7 @@ function V8() {
           yAxisKey: "Hungary",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Iceland",
@@ -970,6 +1057,7 @@ function V8() {
           yAxisKey: "Iceland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "India",
@@ -981,6 +1069,7 @@ function V8() {
           yAxisKey: "India",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Indonesia",
@@ -992,6 +1081,7 @@ function V8() {
           yAxisKey: "Indonesia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Iraq",
@@ -1003,6 +1093,7 @@ function V8() {
           yAxisKey: "Iraq",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Ireland",
@@ -1014,6 +1105,7 @@ function V8() {
           yAxisKey: "Ireland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Iran",
@@ -1025,6 +1117,7 @@ function V8() {
           yAxisKey: "Iran",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Israel",
@@ -1036,6 +1129,7 @@ function V8() {
           yAxisKey: "Israel",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Italy",
@@ -1047,6 +1141,7 @@ function V8() {
           yAxisKey: "Italy",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Jamaica",
@@ -1058,6 +1153,7 @@ function V8() {
           yAxisKey: "Jamaica",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Japan",
@@ -1069,6 +1165,7 @@ function V8() {
           yAxisKey: "Japan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Jordan",
@@ -1080,6 +1177,7 @@ function V8() {
           yAxisKey: "Jordan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kazakhstan",
@@ -1091,6 +1189,7 @@ function V8() {
           yAxisKey: "Kazakhstan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kenya",
@@ -1102,6 +1201,7 @@ function V8() {
           yAxisKey: "Kenya",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kiribati",
@@ -1113,6 +1213,7 @@ function V8() {
           yAxisKey: "Kiribati",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kosovo",
@@ -1124,6 +1225,7 @@ function V8() {
           yAxisKey: "Kosovo",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kuwait",
@@ -1135,6 +1237,7 @@ function V8() {
           yAxisKey: "Kuwait",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Kyrgyzstan",
@@ -1146,6 +1249,7 @@ function V8() {
           yAxisKey: "Kyrgyzstan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Laos",
@@ -1157,6 +1261,7 @@ function V8() {
           yAxisKey: "Laos",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Latvia",
@@ -1168,6 +1273,7 @@ function V8() {
           yAxisKey: "Latvia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Lebanon",
@@ -1179,6 +1285,7 @@ function V8() {
           yAxisKey: "Lebanon",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Lesotho",
@@ -1190,6 +1297,7 @@ function V8() {
           yAxisKey: "Lesotho",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Liberia",
@@ -1201,6 +1309,7 @@ function V8() {
           yAxisKey: "Liberia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Libya",
@@ -1212,6 +1321,7 @@ function V8() {
           yAxisKey: "Libya",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Liechtenstein",
@@ -1223,6 +1333,7 @@ function V8() {
           yAxisKey: "Liechtenstein",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Lithuania",
@@ -1234,6 +1345,7 @@ function V8() {
           yAxisKey: "Lithuania",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Luxembourg",
@@ -1245,6 +1357,7 @@ function V8() {
           yAxisKey: "Luxembourg",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Macao",
@@ -1256,6 +1369,7 @@ function V8() {
           yAxisKey: "Macao",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "North Macedonia",
@@ -1267,6 +1381,7 @@ function V8() {
           yAxisKey: "North_Macedonia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Madagascar",
@@ -1278,6 +1393,7 @@ function V8() {
           yAxisKey: "Madagascar",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Malawi",
@@ -1289,6 +1405,7 @@ function V8() {
           yAxisKey: "Malawi",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Maldives",
@@ -1300,6 +1417,7 @@ function V8() {
           yAxisKey: "Maldives",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mali",
@@ -1311,6 +1429,7 @@ function V8() {
           yAxisKey: "Mali",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Malta",
@@ -1322,6 +1441,7 @@ function V8() {
           yAxisKey: "Malta",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Marshall Islands",
@@ -1333,6 +1453,7 @@ function V8() {
           yAxisKey: "Marshall_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Martinique",
@@ -1344,6 +1465,7 @@ function V8() {
           yAxisKey: "Martinique",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mauritania",
@@ -1355,6 +1477,7 @@ function V8() {
           yAxisKey: "Mauritania",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mauritius",
@@ -1366,6 +1489,7 @@ function V8() {
           yAxisKey: "Mauritius",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mayotte",
@@ -1377,6 +1501,7 @@ function V8() {
           yAxisKey: "Mayotte",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mexico",
@@ -1388,6 +1513,7 @@ function V8() {
           yAxisKey: "Mexico",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mongolia",
@@ -1399,6 +1525,7 @@ function V8() {
           yAxisKey: "Mongolia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Montenegro",
@@ -1410,6 +1537,7 @@ function V8() {
           yAxisKey: "Montenegro",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Montserrat",
@@ -1421,6 +1549,7 @@ function V8() {
           yAxisKey: "Montserrat",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Morocco",
@@ -1432,6 +1561,7 @@ function V8() {
           yAxisKey: "Morocco",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Mozambique",
@@ -1443,6 +1573,7 @@ function V8() {
           yAxisKey: "Mozambique",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Myanmar",
@@ -1454,6 +1585,7 @@ function V8() {
           yAxisKey: "Myanmar",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Namibia",
@@ -1465,6 +1597,7 @@ function V8() {
           yAxisKey: "Namibia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Nauru",
@@ -1476,6 +1609,7 @@ function V8() {
           yAxisKey: "Nauru",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Nepal",
@@ -1487,6 +1621,7 @@ function V8() {
           yAxisKey: "Nepal",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Netherlands",
@@ -1498,6 +1633,7 @@ function V8() {
           yAxisKey: "Netherlands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "New Caledonia",
@@ -1509,6 +1645,7 @@ function V8() {
           yAxisKey: "New_Caledonia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "New Zealand",
@@ -1520,6 +1657,7 @@ function V8() {
           yAxisKey: "New_Zealand",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Nicaragua",
@@ -1531,6 +1669,7 @@ function V8() {
           yAxisKey: "Nicaragua",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Niger",
@@ -1542,6 +1681,7 @@ function V8() {
           yAxisKey: "Niger",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Nigeria",
@@ -1553,6 +1693,7 @@ function V8() {
           yAxisKey: "Nigeria",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Niue",
@@ -1564,6 +1705,7 @@ function V8() {
           yAxisKey: "Niue",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Norway",
@@ -1575,6 +1717,7 @@ function V8() {
           yAxisKey: "Norway",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Occupied Palestinian Territory",
@@ -1586,6 +1729,7 @@ function V8() {
           yAxisKey: "Occupied_Palestinian_Territory",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Oman",
@@ -1597,6 +1741,7 @@ function V8() {
           yAxisKey: "Oman",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Pakistan",
@@ -1608,6 +1753,7 @@ function V8() {
           yAxisKey: "Pakistan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Palau",
@@ -1619,6 +1765,7 @@ function V8() {
           yAxisKey: "Palau",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Panama",
@@ -1630,6 +1777,7 @@ function V8() {
           yAxisKey: "Panama",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Papua New  Guinea",
@@ -1641,6 +1789,7 @@ function V8() {
           yAxisKey: "Papua_New_Guinea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Paraguay",
@@ -1652,6 +1801,7 @@ function V8() {
           yAxisKey: "Paraguay",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Peru",
@@ -1663,6 +1813,7 @@ function V8() {
           yAxisKey: "Peru",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Philippines",
@@ -1674,6 +1825,7 @@ function V8() {
           yAxisKey: "Philippines",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Bolivia",
@@ -1685,6 +1837,7 @@ function V8() {
           yAxisKey: "Bolivia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Poland",
@@ -1696,6 +1849,7 @@ function V8() {
           yAxisKey: "Poland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Portugal",
@@ -1707,6 +1861,7 @@ function V8() {
           yAxisKey: "Portugal",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Qatar",
@@ -1718,6 +1873,7 @@ function V8() {
           yAxisKey: "Qatar",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Cameroon",
@@ -1729,6 +1885,7 @@ function V8() {
           yAxisKey: "Cameroon",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "South Korea",
@@ -1740,6 +1897,7 @@ function V8() {
           yAxisKey: "South_Korea",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Moldova",
@@ -1751,6 +1909,7 @@ function V8() {
           yAxisKey: "Moldova",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "South Sudan",
@@ -1762,6 +1921,7 @@ function V8() {
           yAxisKey: "South_Sudan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sudan",
@@ -1773,6 +1933,7 @@ function V8() {
           yAxisKey: "Sudan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Réunion",
@@ -1784,6 +1945,7 @@ function V8() {
           yAxisKey: "Réunion",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Romania",
@@ -1795,6 +1957,7 @@ function V8() {
           yAxisKey: "Romania",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Russian Federation",
@@ -1806,6 +1969,7 @@ function V8() {
           yAxisKey: "Russian_Federation",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Rwanda",
@@ -1817,6 +1981,7 @@ function V8() {
           yAxisKey: "Rwanda",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saint Helena",
@@ -1828,6 +1993,7 @@ function V8() {
           yAxisKey: "Saint_Helena",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saint Lucia",
@@ -1839,6 +2005,7 @@ function V8() {
           yAxisKey: "Saint_Lucia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sint Maarten (Dutch part)",
@@ -1850,6 +2017,7 @@ function V8() {
           yAxisKey: "Sint_Maarten_Dutch_part",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Samoa",
@@ -1861,6 +2029,7 @@ function V8() {
           yAxisKey: "Samoa",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sao Tome and Principe",
@@ -1872,6 +2041,7 @@ function V8() {
           yAxisKey: "Sao_Tome_and_Principe",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saudi Arabia",
@@ -1883,6 +2053,7 @@ function V8() {
           yAxisKey: "Saudi_Arabia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Senegal",
@@ -1894,6 +2065,7 @@ function V8() {
           yAxisKey: "Senegal",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Serbia",
@@ -1905,6 +2077,7 @@ function V8() {
           yAxisKey: "Serbia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Seychelles",
@@ -1916,6 +2089,7 @@ function V8() {
           yAxisKey: "Seychelles",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sierra Leone",
@@ -1927,6 +2101,7 @@ function V8() {
           yAxisKey: "Sierra_Leone",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Singapore",
@@ -1938,6 +2113,7 @@ function V8() {
           yAxisKey: "Singapore",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Slovakia",
@@ -1949,6 +2125,7 @@ function V8() {
           yAxisKey: "Slovakia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Slovenia",
@@ -1960,6 +2137,7 @@ function V8() {
           yAxisKey: "Slovenia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Solomon Islands",
@@ -1971,6 +2149,7 @@ function V8() {
           yAxisKey: "Solomon_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Somalia",
@@ -1982,6 +2161,7 @@ function V8() {
           yAxisKey: "Somalia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "South Africa",
@@ -1993,6 +2173,7 @@ function V8() {
           yAxisKey: "South_Africa",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Spain",
@@ -2004,6 +2185,7 @@ function V8() {
           yAxisKey: "Spain",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sri Lanka",
@@ -2015,6 +2197,7 @@ function V8() {
           yAxisKey: "Sri_Lanka",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saint Kitts and Nevis",
@@ -2026,6 +2209,7 @@ function V8() {
           yAxisKey: "Saint_Kitts_and_Nevis",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saint Pierre and Miquelon",
@@ -2037,6 +2221,7 @@ function V8() {
           yAxisKey: "Saint_Pierre_and_Miquelon",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Saint Vincent and the Grenadines",
@@ -2048,6 +2233,7 @@ function V8() {
           yAxisKey: "Saint_Vincent_and_the_Grenadines",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Suriname",
@@ -2059,6 +2245,7 @@ function V8() {
           yAxisKey: "Suriname",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Swaziland",
@@ -2070,6 +2257,7 @@ function V8() {
           yAxisKey: "Swaziland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Sweden",
@@ -2081,6 +2269,7 @@ function V8() {
           yAxisKey: "Sweden",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Switzerland",
@@ -2092,6 +2281,7 @@ function V8() {
           yAxisKey: "Switzerland",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Syria",
@@ -2103,6 +2293,7 @@ function V8() {
           yAxisKey: "Syria",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Taiwan",
@@ -2114,6 +2305,7 @@ function V8() {
           yAxisKey: "Taiwan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Tajikistan",
@@ -2125,6 +2317,7 @@ function V8() {
           yAxisKey: "Tajikistan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Thailand",
@@ -2136,6 +2329,7 @@ function V8() {
           yAxisKey: "Thailand",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Timor-Leste",
@@ -2147,6 +2341,7 @@ function V8() {
           yAxisKey: "TimorLeste",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Togo",
@@ -2158,6 +2353,7 @@ function V8() {
           yAxisKey: "Togo",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Tonga",
@@ -2169,6 +2365,7 @@ function V8() {
           yAxisKey: "Tonga",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Trinidad and Tobago",
@@ -2180,6 +2377,7 @@ function V8() {
           yAxisKey: "Trinidad_and_Tobago",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Tunisia",
@@ -2191,6 +2389,7 @@ function V8() {
           yAxisKey: "Tunisia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Turkey",
@@ -2202,6 +2401,7 @@ function V8() {
           yAxisKey: "Turkey",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Turkmenistan",
@@ -2213,6 +2413,7 @@ function V8() {
           yAxisKey: "Turkmenistan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Turks and Caicos Islands",
@@ -2224,6 +2425,7 @@ function V8() {
           yAxisKey: "Turks_and_Caicos_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Tuvalu",
@@ -2235,6 +2437,7 @@ function V8() {
           yAxisKey: "Tuvalu",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Uganda",
@@ -2246,6 +2449,7 @@ function V8() {
           yAxisKey: "Uganda",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Ukraine",
@@ -2257,6 +2461,7 @@ function V8() {
           yAxisKey: "Ukraine",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "United Arab Emirates",
@@ -2268,17 +2473,19 @@ function V8() {
           yAxisKey: "United_Arab_Emirates",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "United Kingdom",
         data: tasks,
-        backgroundColor: "rgb(255, 255, 255)",
-        borderColor: "rgb(200, 16, 46)",
+        backgroundColor: "rgb(200, 16, 46)",
+        borderColor: "rgb(255, 255, 255)",
         parsing: {
           xAxisKey: "Year",
           yAxisKey: "United_Kingdom",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Tanzania",
@@ -2290,6 +2497,7 @@ function V8() {
           yAxisKey: "Tanzania",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "USA",
@@ -2301,6 +2509,7 @@ function V8() {
           yAxisKey: "USA",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Uruguay",
@@ -2312,6 +2521,7 @@ function V8() {
           yAxisKey: "Uruguay",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Uzbekistan",
@@ -2323,6 +2533,7 @@ function V8() {
           yAxisKey: "Uzbekistan",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Vanuatu",
@@ -2334,6 +2545,7 @@ function V8() {
           yAxisKey: "Vanuatu",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Venezuela",
@@ -2345,6 +2557,7 @@ function V8() {
           yAxisKey: "Venezuela",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Viet Nam",
@@ -2356,6 +2569,7 @@ function V8() {
           yAxisKey: "Viet_Nam",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Wallis and Futuna Islands",
@@ -2367,6 +2581,7 @@ function V8() {
           yAxisKey: "Wallis_and_Futuna_Islands",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Yemen",
@@ -2378,6 +2593,7 @@ function V8() {
           yAxisKey: "Yemen",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Zambia",
@@ -2389,6 +2605,7 @@ function V8() {
           yAxisKey: "Zambia",
         },
         pointRadius: 1,
+        hidden: true,
       },
       {
         label: "Zimbabwe",
@@ -2400,7 +2617,9 @@ function V8() {
           yAxisKey: "Zimbabwe",
         },
         pointRadius: 1,
+        hidden: true,
       },
+      
       
     ],
   };
@@ -2421,8 +2640,6 @@ function V8() {
       y: {
         type: "linear",
         position: "left",
-        min: 0,
-        max: 10700,
         title: {
             display: true,
             color: "red",
@@ -2445,7 +2662,7 @@ function V8() {
   };
 
   return (
-    <div style={{ width: "1000x" }}>
+    <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>
       Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020

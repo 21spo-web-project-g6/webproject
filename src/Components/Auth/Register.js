@@ -1,9 +1,9 @@
 import axios from 'axios'
-import { Link } from 'react-router-dom'
-import RegCSS from '../Styles/Reg.module.css'
 import Constants from '../../Constants.json';
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { Link, useNavigate} from 'react-router-dom'
+import RegCSS from './Reg.module.css'
+
 
 export default function Register() {
 
@@ -52,7 +52,7 @@ export default function Register() {
     <div className={RegCSS.container}>
         <form className={RegCSS.form} onSubmit={ handleRegisterSubmit }>
             <div className={RegCSS.content}>
-                <h1 className={RegCSS.title}>Register to the App</h1>
+                <h1 className={RegCSS.title}>Register to the Application</h1>
                 <h3 className={RegCSS.subtitle}>Already a member? Login <Link to='/login'>HERE</Link></h3>
                 <div className={RegCSS.group}>
                     <input type="email" 

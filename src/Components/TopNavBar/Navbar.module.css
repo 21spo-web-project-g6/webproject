@@ -1,4 +1,8 @@
-@import './Constants.css';
+@import '../../Constants.css';
+
+a{
+    color: var(--link-c);
+}
 
 .navigation {
     height: 60px;
