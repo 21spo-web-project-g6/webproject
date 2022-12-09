@@ -142,6 +142,71 @@ function V3() {
           },
           pointRadius: 1,
         },
+        {
+          label: "Formula for gunpowder, used for fire arrows, incendiary projectiles, smoke bombs",
+          type:"scatter",
+          data: [        
+            {x: 1044, y: 271},
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe,",
+          type:"scatter",
+          data: [        
+            {x: 1346, y: 271},         
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Mass production of spun textiles, mechanised by water power; coal-fired and steam-powered production of iron and steel",
+          type:"scatter",
+          data: [       
+            {x: 1780, y: 271},         
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "First commercially viable power stations, coal-fired",
+          type:"scatter",
+          data: [        
+            {x:  1882, y: 271},          
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "First nuclear power plant",
+          type:"scatter",
+          data: [ 
+            {x: 1954, y: 271},
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
       ],
     };
   
@@ -170,7 +235,7 @@ function V3() {
             
         },
         xAxes: {
-          type: "time",
+          type: "linear",
           title: {
             color: "red",
             display: true,
