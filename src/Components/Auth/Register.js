@@ -2,8 +2,8 @@ import axios from 'axios'
 import Constants from '../../Constants.json';
 import { useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom'
-
 import RegCSS from './Reg.module.css'
+
 
 export default function Register() {
 

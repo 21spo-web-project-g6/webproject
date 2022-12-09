@@ -4,8 +4,10 @@ import { Chart } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 import GraphCSS from './Graph.module.css'
+
+
+
 
 const URL = "http://localhost:3001/10";
 
