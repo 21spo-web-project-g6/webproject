@@ -3,6 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from './Graph.module.css'
 
 const URL13 = "http://localhost:3001/13";
 const URL14 = "http://localhost:3001/14";
@@ -52,7 +53,7 @@ function V9() {
   
   const options = {
     responsive: true,
-    radius: "65%",
+    radius: "70%",
     maintainAspectRatio: true,
     animation: false,
 
@@ -78,7 +79,7 @@ function V9() {
 
   const data = {
     type: "doughnut",
-    labels: ["Energy (73,3%)", "Industrial Processes (5,2%)","Agriculture, Forestry & Land Use (18,4%)","Waste (3,2%","Transport"],
+    labels: ["Energy (73,3%)", "Industrial Processes (5,2%)","Agriculture, Forestry & Land Use (18,4%)","Waste (3,2%"],
     datasets: [
       {
         labels: ["Energy", "Industrial Processes","Agriculture, Forestry & Land Use (AFOLU)","Waste"],
@@ -103,9 +104,14 @@ function V9() {
   };
 
   return (
-    <div style={{ position: "relative", margin: "auto", width: "80%" }}>
-      <Doughnut data={data} options={options} />
-    </div>
+    <div className={GraphCSS.container}>
+    <Doughnut options={options} data={data} />
+    <p>
+    Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020
+    </p>
+    <h1><a href="https://data.icos-cp.eu/licence_accept?ids=%5B%22lApekzcmd4DRC34oGXQqOxbJ%22%5D">Link to data sources.</a></h1>
+    <h1><a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2021">Full details.</a></h1>
+  </div>
   );
 };
 

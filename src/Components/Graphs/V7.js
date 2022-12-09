@@ -38,7 +38,7 @@ function V7() {
   }, []);
   
   const data = {
-    labels: tasks,
+  
     datasets: [
       {
         label: "Change in Global Average Surface Temperature (GAST) from present (0-5ka average)",
@@ -69,18 +69,24 @@ function V7() {
       {
         label: "Events",
         data: [
-          {x: 200000, y: 2.5, text:'Test1'}, 
-          {x: 30000, y: 2.5, text:'Test1'}
+          {x: -1500000, y: -7, text:'moro'}, 
+          {x: -122500, y: -7, text:'hei'},
+          {x: -39500, y: -7, text:'moro'}, 
+          {x: -10800, y: -7, text:'hei'},
+          {x: -2000, y: -7, text:'moro'}, 
+          {x:  290, y: -7, text:'hei'},
+          {x: 536, y: -7, text:'moro'}, 
+          {x: 1044, y: -7, text:'hei'},
+          {x: 1346, y: -7, text:'moro'}, 
+          {x: 1780, y: -7, text:'hei'},
+          {x:  1882, y: -7, text:'moro'}, 
+          {x: 1954, y: -7, text:'hei'},
         ],
-        borderColor: "rgba(15, 44, 233, 0.8)",
-        backgroundColor: "rgba(15, 44, 233, 0.8)",
-        borderWidth: 1,
-        yAxisID: 'y1',
-        parsing: {
-          xAxisKey: "Year",
-          yAxisKey: "Event",
-        },
-        pointRadius: 1,
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showLine: false,
+        fill: false,
+        pointRadius: 3,
       },
     ],
   };
@@ -124,10 +130,12 @@ function V7() {
       x: {
         type: "linear",
         position: "bottom",
+        min:-2000000,
+        max:2000,
         title: {
             display: true,
             color: "red",
-            text: 'Before Present (BP)'
+            text: 'Year'
           },
       },
     },
