@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import RegCSS from '../Styles/Reg.module.css'
-import Constants from '../Constants.json';
+import Constants from '../../Constants.json';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
