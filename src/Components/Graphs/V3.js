@@ -151,15 +151,6 @@ function V3() {
       plugins: {
         legend: {
           position: "top",
-          color: "rgb(150, 152, 157)",
-          labels:{
-            color: "rgb(150, 152, 157)",
-            font: {
-              size: 1
-            },
-          },
-
-
         },
         title: {
           display: true,
@@ -171,7 +162,7 @@ function V3() {
         yAxes: {
           type: "linear",
           title: {
-            color: "red",
+            color: "white",
             display: true,
             text: "Co2 Mole Fraction (ppm)",
             position: "left",
@@ -181,7 +172,7 @@ function V3() {
         xAxes: {
           type: "time",
           title: {
-            color: "red",
+            color: "white",
             display: true,
             text: "Year",
             position: "bottom",
