@@ -1,0 +1,27 @@
+.container {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vw 100vw;
+    gap: 2rem;
+
+    place-items: center;
+    border: 1px solid black;
+}
+
+.containerItem{
+    border: 1px solid rgba(149, 149, 149, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+    background-color: rgb(24, 24, 24);
+}
+
+p {
+    font-size: 30px;
+}
+
+/* @media screen and (max-width: 1080px) {
+    .container {
+        width: 90vw;
+    }
+} */

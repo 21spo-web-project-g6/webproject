@@ -1,7 +1,7 @@
-import React from 'react'
-import NavbarCSS from '../Styles/Navbar.module.css'
-import {Link} from 'react-router-dom'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
+import NavbarCSS from './Navbar.module.css'
+
 
 export default function Navbar() {
   const [isNavExp, setIsNavExp] = useState(false)

@@ -1,4 +1,8 @@
-@import './Constants.css';
+@import '../../Constants.css';
+
+a{
+    color: var(--link-c);
+}
 
 .navigation {
     height: 60px;
@@ -60,7 +64,7 @@
     background-color: var(--highlight-color);
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 700px){
     .hamburger{
         display: block;
     }

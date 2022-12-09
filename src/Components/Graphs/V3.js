@@ -4,6 +4,7 @@ import { Chart } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from './Graph.module.css'
 
 const URL4 = "http://localhost:3001/4";
 const URL5 = "http://localhost:3001/5";
@@ -150,6 +151,15 @@ function V3() {
       plugins: {
         legend: {
           position: "top",
+          color: "rgb(150, 152, 157)",
+          labels:{
+            color: "rgb(150, 152, 157)",
+            font: {
+              size: 1
+            },
+          },
+
+
         },
         title: {
           display: true,
@@ -160,10 +170,22 @@ function V3() {
       scales: {
         yAxes: {
           type: "linear",
+          title: {
+            color: "red",
+            display: true,
+            text: "Co2 Mole Fraction (ppm)",
+            position: "left",
+          },
             
         },
         xAxes: {
           type: "time",
+          title: {
+            color: "red",
+            display: true,
+            text: "Year",
+            position: "bottom",
+          },
           displayFormats: {
             Year: 'Y',
             
@@ -175,12 +197,12 @@ function V3() {
     };
   
     return (
-      <div style={{ width: "1000x" }}>
+      <div className={GraphCSS.container}>
         <Line options={options} data={data} />
-        <h1> <a href="https://gml.noaa.gov/ccgg/trends/">Link to V3 data measurement description. </a></h1>
-        <h1> <a href="https://gml.noaa.gov/ccgg/about/co2_measurements.html">Link to V3 data sources.</a> </h1>
-        <h1> <a href="https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html">Link to V4 data measurement description.</a> </h1>
-        <h1> <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat">Link to V4 data source.</a> </h1>
+        <h1><a href="https://gml.noaa.gov/ccgg/trends/">Link</a> to V3 data measurement description.</h1>
+        <h1><a href="https://gml.noaa.gov/ccgg/about/co2_measurements.html">Link</a> to V3 data sources.</h1>
+        <h1><a href="https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html">Link</a> to V4 data measurement description.</h1>
+        <h1><a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat">Link</a> to V4 data source.</h1>
       </div>
     );
   }

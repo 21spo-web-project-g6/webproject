@@ -4,12 +4,14 @@ import { Chart } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from './Graph.module.css'
+
 
 const URL1 = "http://localhost:3001/1";
 const URL2 = "http://localhost:3001/2";
 const URL3 = "http://localhost:3001/3";
 
-function V1() {
+export default function V1() {
   const [tasks1, setTasks1] = useState([]);
   const [tasks2, setTasks2] = useState([]);
   const [tasks3, setTasks3] = useState([]);
@@ -18,7 +20,7 @@ function V1() {
     axios
       .get(URL1)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         setTasks1(response.data);
       })
       .catch((error) => {
@@ -30,7 +32,7 @@ function V1() {
     axios
       .get(URL2)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         setTasks2(response.data);
       })
       .catch((error) => {
@@ -42,7 +44,7 @@ function V1() {
     axios
       .get(URL3)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         setTasks3(response.data);
       })
       .catch((error) => {
@@ -155,9 +157,16 @@ function V1() {
     scales: {
       yAxes: {
         type: "linear",
+        
           
       },
       xAxes: {
+        title: {
+          color: "red",
+          display: true,
+          text: "Year",
+          position: "bottom",
+        },
         type: "time",
         displayFormats: {
           Year: 'Y',
@@ -170,16 +179,15 @@ function V1() {
   };
 
   return (
-    <div style={{ width: "1000x" }}>
+    <div className={GraphCSS.container}>
       <Line options={options} data={data} />
-      <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link to V1 data sources.</a> </h1>
+
+      <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link</a> to V1 data sources.</h1>
       <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link to V2 data sources.</a> </h1>
       <h1> <a href="https://www.nature.com/articles/nature03265">Full study of V2 which includes data measurement description.</a> </h1>
     </div>
   );
 }
-
-export default V1;
 
 //DATAN TARKISTUKSEEN
 /* {tasks1.map((task) => (

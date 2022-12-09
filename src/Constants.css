@@ -5,6 +5,9 @@
     --content-bg-color2: linear-gradient(180deg, rgb(18, 24, 27) 0%,
     rgba(29,36,49) 100%);
     --h1-color: rgb(220, 221, 222);
-    --p-color: rgb(150, 152, 157);
-    --highlight-color: rgb(59, 165, 93);
+    --p-color: rgb(178,190,205);
+    /* --highlight-color: rgb(59, 165, 93); */
+    --highlight-color: rgb(185, 0, 52);
+    --link-c: linear-gradient(150deg, red,blue);
+    --link2-c: rgb(125,0,130);
   }
