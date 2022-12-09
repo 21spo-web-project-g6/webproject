@@ -5,6 +5,7 @@ import "chartjs-adapter-date-fns";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import GraphCSS from './Graph.module.css'
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 const URL = "http://localhost:3001/11";
 const URL2 = "http://localhost:3001/16";
@@ -37,8 +38,9 @@ function V7() {
       });
   }, []);
   
-  const data = {
   
+  const data = {
+  type:'Line',
     datasets: [
       {
         label: "Change in Global Average Surface Temperature (GAST) from present (0-5ka average)",
@@ -67,24 +69,194 @@ function V7() {
         pointRadius: 1,
       },
       {
-        label: "Human Evolution and Activities",
+        label: "Early Homo erectus, direct ancestor of modern humans",
+        type:"scatter",
         data: [
-          {x: "-1500000", y: -7, status:"perkele"}, 
-          {x: -122500, y: -7},
-          {x: -39500, y: -7}, 
-          {x: -10800, y: -7},
-          {x: -2000, y: -7}, 
-          {x:  290, y: -7},
-          {x: 536, y: -7}, 
-          {x: 1044, y: -7},
-          {x: 1346, y: -7}, 
-          {x: 1780, y: -7},
-          {x:  1882, y: -7}, 
-          {x: 1954, y: -7},
+          {x: -2000000, y: -7}, 
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
-        showLine: false,
+        display: false,
+        hidden: true,
+        showline: false,
+        fill: false,
+        pointRadius: 3,
+        
+      },     
+      {
+        label: "Earliest control of fire, by Homo erectus ",
+        type:"scatter",
+        data: [
+          {x: -1500000, y: -7}, 
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        display: false,
+        hidden: true,
+        showline: false,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "rise of Homo heidelbergensis in Africa and Europe",
+        type:"scatter",
+        data: [
+          {x: -700000, y: -7}, 
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        display: false,
+        hidden: true,
+        showline: false,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "rise of Neanderthals Homo neanderthalensis across Europe",
+        data: [{x: -450000, y: -7},],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Prelude to Earth’s Last Glacial Period",
+        type:"scatter",
+        data: [{x: -122500, y: -7},],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Most recent reversal of Earth’s magnetic poles",
+        type:"scatter",
+        data: [{x: -39500, y: -7},],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Climate shift contributing to megafaunal extinctions and human cultural changes ",
+        type:"scatter",
+        data: [        
+          {x: -10800, y: -6.8},         
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Earliest use of coal as fuel ",
+        type:"scatter",
+        data: [      
+          {x: -2000, y: -6.6},         
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Firing of natural gas in southwest China",
+        type:"scatter",
+        data: [        
+          {x:  290, y: -6.4},        
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Crop failures across the northern hemisphere caused by volcanic eruptions in Iceland",
+        type:"scatter",
+        data: [        
+          {x: 536, y: -6.2},        
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Formula for gunpowder, used for fire arrows, incendiary projectiles, smoke bombs",
+        type:"scatter",
+        data: [        
+          {x: 1044, y: -6},
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe,",
+        type:"scatter",
+        data: [        
+          {x: 1346, y: -5.8},         
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "Mass production of spun textiles, mechanised by water power; coal-fired and steam-powered production of iron and steel",
+        type:"scatter",
+        data: [       
+          {x: 1780, y: -5.6},         
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "First commercially viable power stations, coal-fired",
+        type:"scatter",
+        data: [        
+          {x:  1882, y: -5.4},          
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
+        fill: false,
+        pointRadius: 3,
+      },
+      {
+        label: "First nuclear power plant",
+        type:"scatter",
+        data: [ 
+          {x: 1954, y: -5.2},
+        ],
+        borderColor: "rgba(0, 200, 0, 1)",
+        backgroundColor: "rgba(0, 200, 0, 1)",
+        showline: false,
+        hidden: true,
         fill: false,
         pointRadius: 3,
       },
@@ -92,9 +264,16 @@ function V7() {
     ],
   };
 
+  
+
   const options = {
     responsive: true,
     plugins: {
+      tooltip: {
+        callbacks: {
+          
+        }
+      },
       legend: {
         position: "top",
       },
@@ -104,18 +283,6 @@ function V7() {
       },
       
       tooltips:{
-        callback:{
-          label: (event) => {
-            return event.raw.data;
-          },
-      legend: {
-        position: "top",
-      },
-      title: {
-        display: true,
-        text: "V7+V10",
-      },
-        }
       }
     },
 
@@ -146,8 +313,8 @@ function V7() {
       x: {
         type: "linear",
         position: "bottom",
-        min:-2000000,
-        max:2000,
+        min:-2010000,
+        max:10000,
         
         title: {
             display: true,
@@ -162,8 +329,7 @@ function V7() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <p>
-        Ice core 800k year composite study shows carbon dioxide data from over
-        800k years.
+      V7 Evolution of global temperature over the past two million years + V10 Human Evolution and Activities
      </p>
       <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
       <h1>Full <a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">details.</a></h1>
