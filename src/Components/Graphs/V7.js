@@ -6,13 +6,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import GraphCSS from './Graph.module.css'
 
-
-
-
 const URL = "http://localhost:3001/11";
+const URL2 = "http://localhost:3001/16";
 
 function V7() {
   const [tasks, setTasks] = useState([]);
+  const [tasks2, setTasks2] = useState([]);
 
   useEffect(() => {
     axios
@@ -20,6 +19,18 @@ function V7() {
       .then((response) => {
         console.log(response.data);
         setTasks(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(URL2)
+      .then((response) => {
+        console.log(response.data);
+        setTasks2(response.data);
       })
       .catch((error) => {
         alert(error.response.data.error);
@@ -55,6 +66,22 @@ function V7() {
         },
         pointRadius: 1,
       },
+      {
+        label: "Events",
+        data: [
+          {x: 200000, y: 2.5, text:'Test1'}, 
+          {x: 30000, y: 2.5, text:'Test1'}
+        ],
+        borderColor: "rgba(15, 44, 233, 0.8)",
+        backgroundColor: "rgba(15, 44, 233, 0.8)",
+        borderWidth: 1,
+        yAxisID: 'y1',
+        parsing: {
+          xAxisKey: "Year",
+          yAxisKey: "Event",
+        },
+        pointRadius: 1,
+      },
     ],
   };
 
@@ -66,7 +93,7 @@ function V7() {
       },
       title: {
         display: true,
-        text: "V7",
+        text: "V7+V10",
       },
     },
 
@@ -91,8 +118,9 @@ function V7() {
             display: true,
             color: "red",
             text: 'Carbon dioxide (ppm)'
-          },
+          },   
       },
+      
       x: {
         type: "linear",
         position: "bottom",

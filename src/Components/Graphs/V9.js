@@ -52,7 +52,7 @@ function V9() {
   
   const options = {
     responsive: true,
-    radius: "75%",
+    radius: "65%",
     maintainAspectRatio: true,
     animation: false,
 
@@ -78,7 +78,7 @@ function V9() {
 
   const data = {
     type: "doughnut",
-    labels: ["Energy (73,3%)", "Industrial Processes (5,2%)","Agriculture, Forestry & Land Use (18,4%)","Waste (3,2%"],
+    labels: ["Energy (73,3%)", "Industrial Processes (5,2%)","Agriculture, Forestry & Land Use (18,4%)","Waste (3,2%","Transport"],
     datasets: [
       {
         labels: ["Energy", "Industrial Processes","Agriculture, Forestry & Land Use (AFOLU)","Waste"],

@@ -6,9 +6,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import GraphCSS from './Graph.module.css'
 
-
-
-
 const URL = "http://localhost:3001/10";
 
 function V6() {
