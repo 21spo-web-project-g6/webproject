@@ -3,6 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import GraphCSS from './Graph.module.css'
 
 const URL13 = "http://localhost:3001/13";
 const URL14 = "http://localhost:3001/14";
@@ -52,7 +53,7 @@ function V9() {
   
   const options = {
     responsive: true,
-    radius: "75%",
+    radius: "70%",
     maintainAspectRatio: true,
     animation: false,
 
@@ -103,9 +104,14 @@ function V9() {
   };
 
   return (
-    <div style={{ position: "relative", margin: "auto", width: "80%" }}>
-      <Doughnut data={data} options={options} />
-    </div>
+    <div className={GraphCSS.container}>
+    <Doughnut options={options} data={data} />
+    <p>
+    CO2 emission percentages by sectors. 
+    </p>
+    <h1><a href="https://ourworldindata.org/uploads/2020/09/Global-GHG-Emissions-by-sector-based-on-WRI-2020.xlsx">Link to data sources.</a></h1>
+    <h1><a href="https://ourworldindata.org/emissions-by-sector#co2-emissions-by-sector">Full details.</a></h1>
+  </div>
   );
 };
 
