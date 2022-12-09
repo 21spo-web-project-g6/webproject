@@ -1,15 +1,58 @@
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
+const URL13 = "http://localhost:3001/13";
+const URL14 = "http://localhost:3001/14";
+const URL15 = "http://localhost:3001/15";
 
+function V9() {
+  const [tasks1, setTasks] = useState([]);
+  const [tasks2, setTasks2] = useState([]);
+  const [tasks3, setTasks3] = useState([]);
 
-const DoughnutChart = ({ xLabels, yData, titleText }) => {
-  console.log(xLabels);
-  console.log(yData);
+  useEffect(() => {
+    axios
+      .get(URL13)
+      .then((response) => {
+        console.log(response.data);
+        setTasks(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
+  }, []);
+  
+  useEffect(() => {
+    axios
+      .get(URL14)
+      .then((response) => {
+        console.log(response.data);
+        setTasks2(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
+  }, []);
 
+  useEffect(() => {
+    axios
+      .get(URL15)
+      .then((response) => {
+        console.log(response.data);
+        setTasks3(response.data);
+      })
+      .catch((error) => {
+        alert(error.response.data.error);
+      });
+  }, []);
+
+  
   const options = {
     responsive: true,
+    radius: "75%",
     maintainAspectRatio: true,
     animation: false,
 
@@ -66,4 +109,4 @@ const DoughnutChart = ({ xLabels, yData, titleText }) => {
   );
 };
 
-export default DoughnutChart;
+export default V9;
