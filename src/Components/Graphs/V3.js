@@ -151,14 +151,6 @@ function V3() {
       plugins: {
         legend: {
           position: "top",
-          color: "rgb(150, 152, 157)",
-          labels:{
-            color: "rgb(150, 152, 157)",
-            font: {
-              size: 1
-            },
-          },
-
 
         },
         title: {
@@ -166,7 +158,6 @@ function V3() {
           text: "V3V4 Hawaii Co2 measurements + Ice Core measurements",
         },
       },
-  
       scales: {
         yAxes: {
           type: "linear",
