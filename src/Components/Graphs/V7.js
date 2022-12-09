@@ -67,20 +67,20 @@ function V7() {
         pointRadius: 1,
       },
       {
-        label: "Events",
+        label: "Human Evolution and Activities",
         data: [
-          {x: -1500000, y: -7, text:'moro'}, 
-          {x: -122500, y: -7, text:'hei'},
-          {x: -39500, y: -7, text:'moro'}, 
-          {x: -10800, y: -7, text:'hei'},
-          {x: -2000, y: -7, text:'moro'}, 
-          {x:  290, y: -7, text:'hei'},
-          {x: 536, y: -7, text:'moro'}, 
-          {x: 1044, y: -7, text:'hei'},
-          {x: 1346, y: -7, text:'moro'}, 
-          {x: 1780, y: -7, text:'hei'},
-          {x:  1882, y: -7, text:'moro'}, 
-          {x: 1954, y: -7, text:'hei'},
+          {x: "-1500000", y: -7, status:"perkele"}, 
+          {x: -122500, y: -7},
+          {x: -39500, y: -7}, 
+          {x: -10800, y: -7},
+          {x: -2000, y: -7}, 
+          {x:  290, y: -7},
+          {x: 536, y: -7}, 
+          {x: 1044, y: -7},
+          {x: 1346, y: -7}, 
+          {x: 1780, y: -7},
+          {x:  1882, y: -7}, 
+          {x: 1954, y: -7},
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -88,6 +88,7 @@ function V7() {
         fill: false,
         pointRadius: 3,
       },
+      
     ],
   };
 
@@ -101,6 +102,21 @@ function V7() {
         display: true,
         text: "V7+V10",
       },
+      
+      tooltips:{
+        callback:{
+          label: (event) => {
+            return event.raw.data;
+          },
+      legend: {
+        position: "top",
+      },
+      title: {
+        display: true,
+        text: "V7+V10",
+      },
+        }
+      }
     },
 
     scales: {
@@ -132,6 +148,7 @@ function V7() {
         position: "bottom",
         min:-2000000,
         max:2000,
+        
         title: {
             display: true,
             color: "red",
