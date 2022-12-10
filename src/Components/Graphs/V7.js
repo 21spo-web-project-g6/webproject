@@ -72,7 +72,7 @@ function V7() {
         label: "Early Homo erectus, direct ancestor of modern humans",
         type:"scatter",
         data: [
-          {x: -2000000, y: -7}, 
+          {x: -1990000, y: -7}, 
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -313,8 +313,8 @@ function V7() {
       x: {
         type: "linear",
         position: "bottom",
-        min:-2010000,
-        max:10000,
+        min:-2000000,
+        max:2022,
         
         title: {
             display: true,

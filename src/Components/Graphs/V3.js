@@ -236,6 +236,8 @@ function V3() {
         },
         xAxes: {
           type: "linear",
+          min:1000,
+          max:2022,
           title: {
             color: "white",
             display: true,
