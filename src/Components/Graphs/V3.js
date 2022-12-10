@@ -156,10 +156,24 @@ function V3() {
           pointRadius: 3,
         },
         {
-          label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe,",
+          label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe (1346-1353)",
           type:"line",
           data: [        
-            {x: '1346-01-01', y: 271},         
+            {x: '1346-01-01', y: 271},  
+            {x: '1353-01-01', y: 271},       
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Global population of humans passes 500 million",
+          type:"line",
+          data: [       
+            {x: '1548-01-01', y: 271},         
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -199,6 +213,19 @@ function V3() {
           type:"line",
           data: [ 
             {x: '1954-01-01', y: 271},
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Global population of humans passes 5 billion",
+          type:"line",
+          data: [ 
+            {x: '1986-01-01', y: 271},
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
