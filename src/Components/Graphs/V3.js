@@ -144,9 +144,9 @@ function V3() {
         },
         {
           label: "Formula for gunpowder, used for fire arrows, incendiary projectiles, smoke bombs",
-          type:"scatter",
+          type:"line",
           data: [        
-            {x: 1044, y: 271},
+            {x: '1044-01-01', y: 271},
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -156,10 +156,24 @@ function V3() {
           pointRadius: 3,
         },
         {
-          label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe,",
-          type:"scatter",
+          label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe (1346-1353)",
+          type:"line",
           data: [        
-            {x: 1346, y: 271},         
+            {x: '1346-01-01', y: 271},  
+            {x: '1353-01-01', y: 271},       
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Global population of humans passes 500 million",
+          type:"line",
+          data: [       
+            {x: '1548-01-01', y: 271},         
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -170,9 +184,9 @@ function V3() {
         },
         {
           label: "Mass production of spun textiles, mechanised by water power; coal-fired and steam-powered production of iron and steel",
-          type:"scatter",
+          type:"line",
           data: [       
-            {x: 1780, y: 271},         
+            {x: '1780-01-01', y: 271},         
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -183,9 +197,9 @@ function V3() {
         },
         {
           label: "First commercially viable power stations, coal-fired",
-          type:"scatter",
+          type:"line",
           data: [        
-            {x:  1882, y: 271},          
+            {x:  '1882-01-01', y: 271},          
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -196,9 +210,22 @@ function V3() {
         },
         {
           label: "First nuclear power plant",
-          type:"scatter",
+          type:"line",
           data: [ 
-            {x: 1954, y: 271},
+            {x: '1954-01-01', y: 271},
+          ],
+          borderColor: "rgba(0, 200, 0, 1)",
+          backgroundColor: "rgba(0, 200, 0, 1)",
+          showline: false,
+          hidden: true,
+          fill: false,
+          pointRadius: 3,
+        },
+        {
+          label: "Global population of humans passes 5 billion",
+          type:"line",
+          data: [ 
+            {x: '1986-01-01', y: 271},
           ],
           borderColor: "rgba(0, 200, 0, 1)",
           backgroundColor: "rgba(0, 200, 0, 1)",
@@ -235,9 +262,8 @@ function V3() {
             
         },
         xAxes: {
-          type: "linear",
-          min:1000,
-          max:2022,
+          type: "time",
+          
           title: {
             color: "white",
             display: true,
