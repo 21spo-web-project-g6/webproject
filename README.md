@@ -3,7 +3,6 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 (IN00CT06-3003 | TVT21SPO)
 
 # React WebProject
-public/icons/V1&V2.jpg
 
 ### `Esittely`
 
