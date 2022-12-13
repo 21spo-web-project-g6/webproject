@@ -1,14 +1,13 @@
 @import '../../Constants.css';
 
-.pNameWrapper{
+.pNameWrapper {
     text-align: center;
     color: white;
     width: 100vw;
     height: 5rem;
-
 }
 
-.pName{
+.pName {
     font-size: 5rem;
     font-weight: bold;
     background-image: var(--link-c);
@@ -17,21 +16,11 @@
     color: transparent;
 }
 
-.container a{
-    background-image: var(--link-c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.container a:hover{
-    color: var(--link2-c);
-    text-decoration: underline;
-}
-
-.container{
+.container {
     width: 100%;
-    padding: 3%;
+    min-height: 100vh;
+    padding: 2%;
+    padding-top: 0;
     margin-top: 10vh;
     gap: 1rem;
     display: grid;
@@ -39,7 +28,31 @@
     grid-row: 1;
 }
 
-.wrapper{
+.container a {
+    background-image: var(--link-c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container a:hover {
+    color: var(--link2-c);
+    text-decoration: underline;
+}
+
+.items {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#v9 {
+    width: 100vw;
+}
+
+.wrapper {
     display: grid;
     grid-template-columns: 0px 1fr;
 }
