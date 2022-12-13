@@ -7,6 +7,11 @@ export const SidebarData = [
         icon: <MdHome />
     },
     {
+        title: "Visualizations",
+        path: "/v",
+        icon: <MdHome />
+    },
+    {
         title: "V1+V2",
         path: "/v1",
         icon: <MdHome />

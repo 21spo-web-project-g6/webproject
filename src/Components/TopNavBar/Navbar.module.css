@@ -1,6 +1,6 @@
 @import '../../Constants.css';
 
-a{
+a {
     color: var(--link-c);
 }
 
@@ -16,34 +16,50 @@ a{
     border-bottom: 0.5vh solid rgba(0, 0, 0, 0.23);
 }
 
-.pName{
+.pName {
     text-decoration: none;
     color: var(--h1-color);
     font-size: 2.5rem;
     margin-left: 1rem;
+    padding: 0.1em;
 }
 
-.menu{
+.pName:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.1em;
+}
+
+.menu {
     margin-left: auto;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     padding: 0;
 }
 
-.menu li{
+.menu li {
     list-style-type: none;
     margin: 0 1rem;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     display: block;
     width: 100%;
+    padding: 0.5em;
+
 }
 
-.hamburger{
+.menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.hamburger {
     border: 0;
     height: 40px;
     width: 40px;
@@ -60,16 +76,16 @@ a{
     display: none;
 }
 
-.hamburger:hover{
+.hamburger:hover {
     background-color: var(--highlight-color);
 }
 
-@media screen and (max-width: 700px){
-    .hamburger{
+@media screen and (max-width: 700px) {
+    .hamburger {
         display: block;
     }
 
-    .menu ul{
+    .menu ul {
         display: none;
         position: absolute;
         top: 60px;
@@ -81,24 +97,24 @@ a{
         background-color: var(--content-bg-color1);
     }
 
-    .menu li{
+    .menu li {
         text-align: center;
         margin: 0;
         border-bottom: 0.5vh solid rgba(0, 0, 0, 0.23);
     }
 
-    .menu li a{
+    .menu li a {
         color: var(--p-color);
         width: 100%;
         padding: 1.5rem 0;
     }
 
-    .menu li:hover a{
+    .menu li:hover a {
         background-color: var(--highlight-color);
         color: var(--main-bg-color);
     }
 
-    .menu.expanded ul{
+    .menu.expanded ul {
         display: block;
     }
 }
