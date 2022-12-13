@@ -6,27 +6,28 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 
 ## ESITTELY
 
-React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen lukuvuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. 
+React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. 
 
-Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen, kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
+Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen (kuva 2), kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
 <br></br>
-![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
-> **KUVA 1**. Käyttöliittymän sivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.
-
+![käyttöliittymän rekisteröinti sivu. Yläpalkissa navigointi palkki jolla voi suunnistaa sovelluksessa kätevästi.](/public/icons/Mainpage.jpg "Mainpage")
+> **KUVA 1**. Käyttöliittymän etusivu. Vasemmalla avattava navigointipalkki jolla voi vaihtaa visualisointeja.
+<br></br>
 ## OMINAISUUDET
 
-Ensimmäinen näkymä käyttäjälle on kotisivu. Kotisivulta näkyy sivupalkissa eri visualisoinnit, joissa graafien avulla havainnollistetaan lämpötilojen sekä hiilioksidiarvojen muutosta. Valikosta painamalla käyttäjä voi saada yksityiskohtaisia graafeja haluamastaan datasta. 
-Jokaisessa visualisoinnissa on graafi, joka vaihtelee vaatimuksien mukaan viivakaaviosta rengaskaavioon. Kaavion nimipainiketta painamalla käyttäjä voi valita, mitä osaa graafista hän haluaa nähdä tai piilottaa. 
+Ensimmäinen näkymä käyttäjälle on kotisivu. Kotisivulta näkyy sivupalkissa eri visualisoinnit (kuva 1), joissa graafien avulla havainnollistetaan lämpötilojen sekä hiilioksidiarvojen muutosta. Valikosta painamalla käyttäjä voi saada yksityiskohtaisia graafeja haluamastaan datasta. 
+Jokaisessa visualisoinnissa on graafi, joka vaihtelee vaatimuksien mukaan viivakaaviosta rengaskaavioon. Kaavion nimipainiketta painamalla voi valita, mitä osaa graafista haluaa nähdä tai piilottaa. 
 
-Käyttäjä voi luoda uuden käyttäjätunnuksen rekisteröitymällä Rekisteröidy-sivulla. Rekisteröitymisen jälkeen kirjautumalla sisään käyttäjä voi tarkastella omia visualisointeja. Käyttäjä voi halutessaan myös poistaa oman käyttäjätunnuksensa.
+Käyttäjä voi luoda uuden käyttäjätunnuksen rekisteröitymällä Rekisteröidy-sivulla. Rekisteröitymisen jälkeen sisään kirjautumalla voi tarkastella omia visualisointeja. Käyttäjä voi halutessaan myös poistaa oman käyttäjätunnuksensa.
 <br></br>
 ![käyttöliittymän rekisteröinti sivu. Yläpalkissa navigointi palkki jolla voi suunnistaa sovelluksessa kätevästi.](/public/icons/Register.jpg "Register")
-> **KUVA 2**. Käyttöliittymän rekisteröinti sivu. Ylhäällä navigointi palkki jolla voi suunnistaa sovelluksessa vaivattomasti.
-
+> **KUVA 2**. Käyttöliittymän rekisteröinti sivu. Ylhäällä navigointipalkki jolla voi suunnistaa sovelluksessa vaivattomasti.
 ## TEKNOLOGIAT
 
-Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmointikielenä toimi JavaScript. Nettisivu luotiin JavaScriptin React-kirjastolla, joka soveltuu erinomaisesti käyttöliittymien kehitykseen. Tietokanta datalle luotiin MySQL:llä, joka saatiin käyttöön Node.js-palvelimella. GitHub oli tärkeä työkalu versionhallintaan ja projektinhallintatyökalujen käyttöön, ja se mahdollisti Kanban-prosessin käytön projektissa.
-
+Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmointikielenä toimi JavaScript. Nettisivu luotiin JavaScriptin React-kirjastolla, joka soveltuu erinomaisesti käyttöliittymien kehitykseen. Tietokanta datalle luotiin MySQL:llä, joka saatiin käyttöön Node.js-palvelimella. GitHub oli tärkeä työkalu versionhallintaan ja projektinhallintatyökalujen käyttöön ja se mahdollisti Kanban-prosessin käytön projektissa.
+<br></br>
+![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
+> **KUVA 3**. Käyttöliittymän visualisointisivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmasta "Menu" painikkeesta avataan sivupalkki (kuva 1).
 ## VISUALISOINNIT
 
 V1 Globaalit historialliset pintalämpötilapoikkeamat tammikuusta 1850 alkaen
