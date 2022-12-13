@@ -8,13 +8,16 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 
 React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen lukuvuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen, kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
 
-![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2.](/public/icons/V1&V2.jpg "V1&V2")
-> **KUVA 1**. Käyttöliittymän sivu, jossa näkyy visualisoinnit 1&2.
+![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
+> **KUVA 1**. Käyttöliittymän sivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.
 
 ### `Ominaisuudet`
 
 Ensimmäinen näkymä käyttäjälle on kotisivu. Kotisivulta näkyy sivupalkissa eri visualisoinnit, joissa graafien avulla havainnollistetaan lämpötilojen sekä hiilioksidiarvojen muutosta. Valikosta painamalla käyttäjä voi saada yksityiskohtaisia graafeja haluamastaan datasta. 
 Jokaisessa visualisoinnissa on graafi, joka vaihtelee vaatimuksien mukaan viivakaaviosta rengaskaavioon. Kaavion nimipainiketta painamalla käyttäjä voi valita, mitä osaa graafista hän haluaa nähdä tai piilottaa.  Käyttäjä voi luoda uuden käyttäjätunnuksen rekisteröitymällä Rekisteröidy-sivulla. Rekisteröitymisen jälkeen kirjautumalla sisään käyttäjä voi tarkastella omia visualisointeja. Käyttäjä voi halutessaan myös poistaa oman käyttäjätunnuksensa.
+
+![käyttöliittymän rekisteröinti sivu. Yläpalkissa navigointi palkki jolla voi suunnistaa sovelluksessa kätevästi.](/public/icons/Register.jpg "Register")
+> **KUVA 2**. Käyttöliittymän rekisteröinti sivu. Ylhäällä navigointi palkki jolla voi suunnistaa sovelluksessa vaivattomasti.
 
 ### `Teknologiat`
 
