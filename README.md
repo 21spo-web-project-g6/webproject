@@ -38,11 +38,11 @@ V2 Pohjoisen pallonpuoliskon 2 000 vuoden lämpötilan rekonstruktio
 , [Koko tutkimus](https://www.nature.com/articles/nature03265)
 
 V3 Ilmakehän CO2-pitoisuudet Mauna Loan-mittauksista alkaen vuodesta 1958
-[Data](https://gml.noaa.gov/ccgg/trends/)
-, [Kuvaus](https://gml.noaa.gov/ccgg/about/co2_measurements.html)
+[Kuvaus](https://gml.noaa.gov/ccgg/about/co2_measurements.html)
+, [Data](https://gml.noaa.gov/ccgg/trends/)
 
 V4 Etelämanner jääydin-arkistot ilmakehän hiilidioksidisuhteista yhdistettynä Mauna Loan-mittauksiin
-[Kuvaukset](https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html)
+[Kuvaus](https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html)
 , [Data](https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat)
 
 V5 Vostok jääytimen-hiilidioksidimittaukset vuosilta: 417160–2342
