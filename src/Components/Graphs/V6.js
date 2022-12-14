@@ -94,7 +94,7 @@ function V6() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <div className={GraphCSS.sourceData}>
-        <p>Ice core 800k year composite study shows carbon dioxide data from over 800k years. </p>
+      <h2><p>Ice core 800k year composite study shows carbon dioxide data from over 800k years.</p></h2>
         <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt">Link</a> to data sources.</h1>
         <h1> <a href="https://www.ncei.noaa.gov/access/paleo-search/study/17975">Full details.</a> </h1>
       </div>

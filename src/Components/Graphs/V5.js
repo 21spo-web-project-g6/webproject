@@ -106,7 +106,7 @@ function V5() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <div className={GraphCSS.sourceData}>
-        <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
+      <h2><p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years.</p></h2>
         <h1><a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link</a> to data sources. </h1>
         <h1><a href="https://www.nature.com/articles/nature03265">Full study</a> which includes data measurement description.</h1>
       </div>
