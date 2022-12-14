@@ -24,7 +24,7 @@ Käyttäjä voi luoda uuden käyttäjätunnuksen rekisteröitymällä Rekisterö
 > **KUVA 2**. Käyttöliittymän rekisteröinti sivu. Ylhäällä navigointipalkki jolla voi suunnistaa sovelluksessa vaivattomasti.
 ## TEKNOLOGIAT
 
-Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmointikielenä toimi JavaScript. Nettisivu luotiin JavaScriptin React-kirjastolla, joka soveltuu erinomaisesti käyttöliittymien kehitykseen. Tietokanta datalle luotiin MySQL:llä, joka saatiin käyttöön Node.js-palvelimella. GitHub oli tärkeä työkalu versionhallintaan ja projektinhallintatyökalujen käyttöön ja se mahdollisti Kanban-prosessin käytön projektissa.
+Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmointikielenä toimi JavaScript. Nettisivu luotiin JavaScriptin React-kirjastolla, joka soveltuu erinomaisesti käyttöliittymien kehitykseen. Tietokanta datalle luotiin MySQL:llä, joka saatiin käyttöön Express Node.js-palvelimella. GitHub oli tärkeä työkalu versionhallintaan ja projektinhallintatyökalujen käyttöön ja se mahdollisti Kanban-prosessin käytön projektissa. Rajapinnan ja sovelluksen testauksessa käytettiin Mochaa, Chaita, ja React-Testing-Librarya.
 <br></br>
 ![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
 > **KUVA 3**. Käyttöliittymän visualisointisivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmasta "Menu" painikkeesta avataan sivupalkki (kuva 1).
@@ -39,16 +39,17 @@ Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmoi
 Tarvitset: Uniserver, Visual Studio Code, [Tietokanta](https://www.mediafire.com/file/kv9oo9sh03to5k1/climate.sql/file)
 
 ![Kuvassa näkyy miten tietokanta ladataan Uniserverille](/public/icons/uniserver.jpg "uniserver")
-> **KUVA 3**. Kuvassa näkyy mihin kansioon tietokanta pitää laittaa ja miten se ladataan Uniserverillä.
+> **KUVA 4**. Kuvassa näkyy mihin kansioon tietokanta tiedosto pitää laittaa ja miten se ladataan Uniserverille.
 
-Kun Tietokanta on asennettu laita se päälle, tee uusi käyttäjä tietokannalle (Oletus käyttäjä on user: climate, password: climate, nämä löytyy config,js)
+Kun Tietokanta on asennettu laita se päälle, tee uusi käyttäjä tietokannalle (Oletus käyttäjä on user: climate, password: climate, nämä löytyy config.js)
 
 Sitten avaa repository Visual Studio Codessa. Tarvitset kaksi terminaalia: toisen palvelimelle, toisen sovellukselle.
 
 Palvelin terminal: cd server, npm install, npm run devStart.  
 Sovellus terminal; npm install, npm start.
 
-Sovellus on nyt käytettävissä osoitteessa http://localhost:3000/   TAI  https://climate.stelti.com/ (Ei tarvitse sovellus terminaalia)
+Sovellus on nyt käytettävissä osoitteessa http://localhost:3000/   TAI  https://climate.stelti.com/ (Ei tarvitse sovellus terminaalia)  
+Valitettavasti käyttäjän luonti ei toimi paikallisesti.
 
 ## VISUALISOINNIT
 
