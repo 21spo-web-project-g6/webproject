@@ -29,8 +29,10 @@ Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmoi
 ![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
 > **KUVA 3**. Käyttöliittymän visualisointisivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmasta "Menu" painikkeesta avataan sivupalkki (kuva 1).
 
-## DEMO
+## DEMOT
 [Linkki projektin demovideoon](https://www.youtube.com/watch?v=Rsjlmr130EU)
+
+[Linkki projektin sivulle](https://climate-app-1111.ew.r.appspot.com/#/v1) - Sivustolla voi tutustua käyttöliittymään, valikkorakenteeseen ja tyyliin. Valitettavasti GCP (Google Cloud Platform) ongelmien vuoksi visualisoinnit eivät piirry web-versiossa, mutta paikallisesti ne toimivat erinomaisesti (Katso Demovideo).
 
 ## VISUALISOINNIT
 
