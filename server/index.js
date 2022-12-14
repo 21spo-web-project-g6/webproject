@@ -41,6 +41,15 @@ app.get("/1",async (req,res) => {
   }
 })
 
+// [
+//   {
+//     "Year": 457722345732,
+//     "AnomalyGlobalMonthly": 
+//     "AnomalyNorthernMonthly": 
+//     "AnomalySouthernMonthly": 
+//   }
+// ]
+
 app.get("/2",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
@@ -221,12 +230,26 @@ app.get("/16",async (req,res) => {
   }
 })
 
+app.get("/user",async (req,res) => {
+  try {
+    const connection = await mysql.createConnection(config.db)
+    const [result,] = await connection.execute('SELECT * FROM user2')
+    if (!result) result=[] //If there is no data, return empty array
+    res.status(200).json(result)
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
+})
+
+
+
 app.post("/new",async (req,res) => {
   try {
     const connection = await mysql.createConnection(config.db)
     //Execute prepared statement
-    const [result,] = await connection.execute('INSERT INTO v1annually (year, annualy, lowtemp, hightemp) VALUES (?, ?, ?, ?)',
-    [req.body.year, req.body.annualy, req.body.lowtemp, req.body.hightemp]);
+    const [result,] = await connection.execute('INSERT INTO user2 (Mail, Password) VALUES (? , ?)',
+    [req.body.Mail, req.body.Password]);
     res.status(200).json({id:result.insertId})
   } catch(err) {
     //Return status code 500 and a error message to client.
