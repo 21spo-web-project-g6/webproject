@@ -6,7 +6,7 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 
 ## ESITTELY
 
-React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. Muita oppimistavoitteita oli mm. sovellus testausta ( Mocha & Chai) ja Kanban-prosessi.
+React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa Chart.js-kirjaston avulla. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. Muita oppimistavoitteita oli mm. sovellus testausta ( Mocha & Chai) ja Kanban-prosessi.
 
 Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen (kuva 2), kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
 <br></br>
@@ -33,6 +33,22 @@ Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmoi
 [Linkki projektin demovideoon](https://www.youtube.com/watch?v=Rsjlmr130EU)
 
 [Linkki projektin sivulle](https://climate-app-1111.ew.r.appspot.com/#/v1) - Sivustolla voi tutustua käyttöliittymään, valikkorakenteeseen ja tyyliin. Valitettavasti GCP (Google Cloud Platform) ongelmien vuoksi visualisoinnit eivät piirry web-versiossa, mutta paikallisesti ne toimivat erinomaisesti (Katso Demovideo).
+
+## KÄYTTÖÖNOTTO PAIKALLISESTI
+
+Tarvitset: Uniserver, Visual Studio Code, [Tietokanta](https://www.mediafire.com/file/kv9oo9sh03to5k1/climate.sql/file)
+
+![Kuvassa näkyy miten tietokanta ladataan Uniserverille](/public/icons/uniserver.jpg "uniserver")
+> **KUVA 3**. Kuvassa näkyy mihin kansioon tietokanta pitää laittaa ja miten se ladataan Uniserverillä.
+
+Kun Tietokanta on asennettu laita se päälle, tee uusi käyttäjä tietokannalle (Oletus käyttäjä on user: climate, password: climate, nämä löytyy config,js)
+
+Sitten avaa repository Visual Studio Codessa. Tarvitset kaksi terminaalia: toisen palvelimelle, toisen sovellukselle.
+
+Palvelin terminal: cd server, npm install, npm run devStart.  
+Sovellus terminal; npm install, npm start.
+
+Sovellus on nyt käytettävissä osoitteessa http://localhost:3000/   TAI  https://climate.stelti.com/ (Ei tarvitse sovellus terminaalia)
 
 ## VISUALISOINNIT
 
