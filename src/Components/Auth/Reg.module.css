@@ -85,7 +85,7 @@ h3{
     border-color: var(--primary);
 }
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 800px) {
     .form{
         background-color: transparent;
         border: none;

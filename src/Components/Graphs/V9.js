@@ -107,11 +107,13 @@ function V9() {
   return (
     <div className={GraphCSS.container} id={GraphCSS.v9}>
       <Doughnut options={options} data={data} />
-      <p>
-        CO2 emission percentages by sectors.
-      </p>
-      <h1><a href="https://ourworldindata.org/uploads/2020/09/Global-GHG-Emissions-by-sector-based-on-WRI-2020.xlsx">Link to data sources.</a></h1>
-      <h1><a href="https://ourworldindata.org/emissions-by-sector#co2-emissions-by-sector">Full details.</a></h1>
+      <div className={GraphCSS.sourceData}>
+        <p>
+          CO2 emission percentages by sectors.
+        </p>
+        <h1><a href="https://ourworldindata.org/uploads/2020/09/Global-GHG-Emissions-by-sector-based-on-WRI-2020.xlsx">Link</a> to data sources.</h1>
+        <h1><a href="https://ourworldindata.org/emissions-by-sector#co2-emissions-by-sector">Full details.</a></h1>
+      </div>
     </div>
   );
 };

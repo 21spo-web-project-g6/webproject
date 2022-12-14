@@ -270,23 +270,23 @@ app.delete("/delete/:id",async (req,res) => {
 })
 
 app.use((req, res, next) => {
-  console.log('Demo middleware executing...');
+  console.log('Middleware executing...');
 
   next();
 })
 
 
 const users = [
-  {
-    id: uuidv4(),
+  /*{
+    Id: uuidv4(),
     mail: 'demo@user.com',
     password: '123456'
   },
   {
-    id: uuidv4(),
+    Id: uuidv4(),
     mail: 'test@user.com',
     password: '987654'
-  }
+  }*/
 ];
 
 passport.use(new BasicStrategy(
@@ -326,21 +326,16 @@ passport.use(new JwtStrategy(jwtOptions, function(jwt_payload, done) {
   done(null, jwt_payload);
 }))
 
-app.get('/hello-world', (req, res) => {
-  res.send('Hello world!')
-})
-
   /*
     REQUEST BODY
     {
-      "username": "foo",
+      "mail": "foo@bar.com",
       "password": "123456",
-      "email": "foo@bar.com"
     }
 */
   
 
-app.post('/register', (req, res) => {
+app.post('/Register',async (req, res) => {
   console.log(req.body);
 
   // create hash of the password
@@ -348,29 +343,28 @@ app.post('/register', (req, res) => {
   const passwordHash = bcrypt.hashSync(req.body.password, salt);
 
   const newUser = {
-    id: uuidv4(),
+    Id: uuidv4(),
     mail: req.body.mail,
     password: passwordHash,
   }
 
   users.push(newUser);
-
+  try {
+    const connection = await mysql.createConnection(config.db)
+    //Execute prepared statement
+    const [result,] = await connection.execute('INSERT INTO user (Id, mail, password) VALUES (?, ?, ?)',
+    [uuidv4(), req.body.mail, passwordHash]);
+    res.status(200).json({id:result.insertId})
+  } catch(err) {
+    //Return status code 500 and a error message to client.
+    res.status(500).json({error: err.message})
+  }
   console.log(users);
 
   res.send("OK");
 })
 
-app.get('/my-protected-resource', passport.authenticate('basic', { session: false }), (req, res) => {
-  console.log('protected resource accessed');
-
-  res.send('Hello protected world');
-})
-
-app.get('/some-other-protected-resource', passport.authenticate('basic', { session: false }), function(req, res) {
-  res.send('Other protected resource accessed');
-})
-
-app.post('/jwtLogin', passport.authenticate('basic', { session: false }), (req, res) => {
+app.post('/login', passport.authenticate('basic', { session: false }), (req, res) => {
 
   console.log(req)
 
@@ -378,7 +372,7 @@ app.post('/jwtLogin', passport.authenticate('basic', { session: false }), (req, 
 
   const payload = {
     user: {
-      id: req.user.id,
+      Id: req.user.id,
       mail: req.user.mail
     }
   };
@@ -394,18 +388,5 @@ app.post('/jwtLogin', passport.authenticate('basic', { session: false }), (req, 
   //Send JWT as a response
   res.json({ jwt: generatedJWT })
 })
-
-app.get('/jwt-protected-resource', passport.authenticate('jwt', { session: false }), (req, res) => {
-  
-  console.log(req.user)
-
-  console.log('User ID from jwt is ' + req.user.user.id)
-  
-  res.send("Ok for user " + req.user.user.mail);
-})
-
-/*app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-})*/
 
 app.listen(port)

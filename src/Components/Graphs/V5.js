@@ -10,7 +10,7 @@ const URL = "http://localhost:3001/9";
 
 function V5() {
   const [tasks, setTasks] = useState([]);
-  
+
   useEffect(() => {
     axios
       .get(URL)
@@ -23,7 +23,7 @@ function V5() {
       });
   }, []);
 
- 
+
   const data = {
     datasets: [
       {
@@ -42,7 +42,7 @@ function V5() {
   };
 
   const options = {
-    
+
     responsive: true,
     plugins: {
       legend: {
@@ -57,32 +57,32 @@ function V5() {
     scales: {
       y: {
         ticks: {
-            // Include a ppmv sign in the ticks
-            callback: function(value, index, ticks) {
-                return value;
+          // Include a ppmv sign in the ticks
+          callback: function (value, index, ticks) {
+            return value;
 
 
-            }
+          }
         },
         type: "linear",
         title: {
 
-            color: '#b2becd',   
-            display: true,
-            text: 'CO2 concentration ppmv'
-          },
-        
-          
+          color: '#b2becd',
+          display: true,
+          text: 'CO2 concentration ppmv'
+        },
+
+
       },
       x: {
         ticks: {
-            // Include a BP sign in the ticks
-            callback: function(value, index, ticks) {
-                return value;
+          // Include a BP sign in the ticks
+          callback: function (value, index, ticks) {
+            return value;
 
-  
 
-            }
+
+          }
         },
         min: 2342,
         max: 417160,
@@ -92,22 +92,24 @@ function V5() {
           AirAge: 'Airage',
         },
         title: {
-            color: '#b2becd',
-            display: true,
-            text: 'BP (Before Present)'
-          },
+          color: '#b2becd',
+          display: true,
+          text: 'BP (Before Present)'
+        },
         position: "bottom",
       },
-      
+
     },
   };
 
   return (
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
-      <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
-      <h1>Link to <a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">V5</a> data sources. </h1>
-      <h1>Full study of  <a href="https://www.nature.com/articles/nature03265">V5</a> which includes data measurement description.</h1>
+      <div className={GraphCSS.sourceData}>
+        <p>Historical carbon dioxide record from the Vostok Ice Core is a ice-drilling project that reveals carbon dioxide data from over 400k years. </p>
+        <h1><a href="https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/vostok.icecore.co2">Link</a> to data sources. </h1>
+        <h1><a href="https://www.nature.com/articles/nature03265">Full study</a> which includes data measurement description.</h1>
+      </div>
     </div>
   );
 }

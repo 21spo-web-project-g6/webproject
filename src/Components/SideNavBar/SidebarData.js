@@ -18,7 +18,7 @@ export const SidebarData = [
     },
     {
 
-        title: "V3+V4",
+        title: "V3+V4+V10",
         path: "/v3",
         icon: <MdHome />
     },
@@ -36,7 +36,7 @@ export const SidebarData = [
     },
     {
 
-        title: "V7",     
+        title: "V7+V10",     
         path: "/v7",
         icon: <MdHome />
     },

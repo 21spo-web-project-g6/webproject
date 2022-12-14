@@ -70,7 +70,7 @@ a {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     right: 25px;
     transform: translateY(-50%);
     display: none;
@@ -80,7 +80,7 @@ a {
     background-color: var(--highlight-color);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .hamburger {
         display: block;
     }
