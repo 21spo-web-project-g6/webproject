@@ -247,7 +247,7 @@ function V3() {
       },
       title: {
         display: true,
-        text: "V3V4 Hawaii Co2 measurements + Ice Core measurements",
+        text: "V3 + V4 + V10",
       },
     },
     scales: {
@@ -284,6 +284,7 @@ function V3() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <div className={GraphCSS.sourceData}>
+        <h2><p>V3 & V4 Hawaii Co2 measurements + Ice Core measurements + V10 Human evolution and activities</p></h2>
         <h1><a href="https://gml.noaa.gov/ccgg/trends/">Link</a> to V3 data measurement description.</h1>
         <h1><a href="https://gml.noaa.gov/ccgg/about/co2_measurements.html">Link</a> to V3 data sources.</h1>
         <h1><a href="https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome.html">Link</a> to V4 data measurement description.</h1>

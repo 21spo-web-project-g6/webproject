@@ -149,7 +149,7 @@ export default function V1() {
       },
       title: {
         display: true,
-        text: "V1 Global historical surface temperature anomalies from January 1850 onwards + V2 Northern Hemisphere 2,000-year temperature reconstruction",
+        text: "V1 + V2 ",
       },
     },
 
@@ -182,6 +182,7 @@ export default function V1() {
       <Line options={options} data={data} />
 
       <div className={GraphCSS.sourceData}>
+         <h2><p>Global historical surface temperature anomalies from January 1850 onwards +  Northern Hemisphere 2,000-year temperature reconstruction.</p></h2>
         <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link</a> to V1 data sources.</h1>
         <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link</a> to V2 data sources.</h1>
         <h1> <a href="https://www.nature.com/articles/nature03265">Full study</a> of V2 which includes data measurement description.</h1>

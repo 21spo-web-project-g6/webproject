@@ -329,9 +329,7 @@ function V7() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
       <div className={GraphCSS.sourceData}>
-        <p>
-          V7 Evolution of global temperature over the past two million years + V10 Human Evolution and Activities
-        </p>
+      <h2><p>V7 Evolution of global temperature over the past two million years + V10 human evolution and activities</p></h2>
         <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
         <h1><a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">Full details.</a></h1>
       </div>
