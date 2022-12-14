@@ -8,7 +8,7 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 
 React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa Chart.js-kirjaston avulla. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. Muita oppimistavoitteita oli mm. sovellus testausta ( Mocha & Chai) ja Kanban-prosessi.
 
-Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen (kuva 2), kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
+Sivulle haluttiin luoda olennaiset web-ominaisuudet: responsiivinen UI, asiakas voi luoda käyttäjätunnuksen (kuva 2), kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
 <br></br>
 ![käyttöliittymän rekisteröinti sivu. Yläpalkissa navigointi palkki jolla voi suunnistaa sovelluksessa kätevästi.](/public/icons/Mainpage.jpg "Mainpage")
 > **KUVA 1**. Käyttöliittymän etusivu. Vasemmalla avattava navigointipalkki jolla voi vaihtaa visualisointeja.
