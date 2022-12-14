@@ -17,7 +17,7 @@ export default function Register() {
 
         try {
             const result = await axios.post(Constants.API_ADDRESS + '/registerBasic', {
-                email: e.target.email.value,
+                mail: e.target.mail.value,
                 pw: e.target.pw.value
               })
               console.log(result)
@@ -55,7 +55,7 @@ export default function Register() {
                 <h1 className={RegCSS.title}>Register to the Application</h1>
                 <h3 className={RegCSS.subtitle}>Already a member? Login <Link to='/login'>HERE</Link></h3>
                 <div className={RegCSS.group}>
-                    <input type="email" 
+                    <input type="mail" 
                     name="email"
                     className={RegCSS.email}
                     placeholder="Email address"
