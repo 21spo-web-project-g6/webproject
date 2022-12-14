@@ -6,7 +6,7 @@ Tietotekniikan tutkinto-ohjelma (Oamk)
 
 ## ESITTELY
 
-React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. 
+React WebProject on web-ohjelmoinnin sovellusprojekti. WebProject on Oamkin toisen vuoden ensimmäinen projekti, jossa syvennytään web-ohjelmoinnin maailmaan. Projektimme aiheena toimivat maailmanlaajuiset lämpötilat ja hiilidioksidiarvot, joiden dataa visualisoidaan ohjelmassa. Tavoitteena oli ryhmätyönä luoda web-sovellus, joka sisältäisi vuosituhansien ajalta lämpötilamuutoksia sekä hiilioksidipäästöjen muuttumista. Muita oppimistavoitteita oli mm. sovellus testausta ( Mocha & Chai) ja Kanban-prosessi.
 
 Sivulle haluttiin luoda olennaiset web-ominaisuudet, jossa asiakas voi luoda käyttäjätunnuksen (kuva 2), kirjautua sisään ja muokata visualisointeja. Jokainen projektiryhmän jäsen toimi projektissa Full Stack-kehittäjänä, työstäen sekä selain- että palvelinpuolta.
 <br></br>
@@ -28,6 +28,10 @@ Projektimme tekstieditorina käytettiin Visual Studio Codea, jossa pääohjelmoi
 <br></br>
 ![käyttöliittymän etusivu, jossa näkyy visualisoinnit V1 & V2. Vasemmalla "Menu" painikkeesta näkee muita visualisointeja.](/public/icons/V1&V2.jpg "V1&V2")
 > **KUVA 3**. Käyttöliittymän visualisointisivu, jossa näkyy visualisoinnit V1 ja V2. Vasemmasta "Menu" painikkeesta avataan sivupalkki (kuva 1).
+
+## DEMO
+[Linkki projektin demovideoon](https://www.youtube.com/watch?v=Rsjlmr130EU)
+
 ## VISUALISOINNIT
 
 V1 Globaalit historialliset pintalämpötilapoikkeamat tammikuusta 1850 alkaen
