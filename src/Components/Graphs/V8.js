@@ -23,7 +23,7 @@ function V8() {
         alert(error.response.data.error);
       });
   }, []);
-  
+
   const data = {
     labels: tasks,
     datasets: [
@@ -2619,8 +2619,8 @@ function V8() {
         pointRadius: 1,
         hidden: true,
       },
-      
-      
+
+
     ],
   };
 
@@ -2641,22 +2641,22 @@ function V8() {
         type: "linear",
         position: "left",
         title: {
-            display: true,
-            color: "red",
-            text: 'Million tonnes of CO2'
-          }
+          display: true,
+          color: "red",
+          text: 'Million tonnes of CO2'
+        }
       },
-     
+
       x: {
         type: "linear",
         position: "bottom",
         min: 1959,
         max: 2020,
         title: {
-            display: true,
-            color: "red",
-            text: 'Year'
-          },
+          display: true,
+          color: "red",
+          text: 'Year'
+        },
       },
     },
   };
@@ -2664,11 +2664,13 @@ function V8() {
   return (
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
-      <p>
-      Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020
-      </p>
-      <h1><a href="https://data.icos-cp.eu/licence_accept?ids=%5B%22lApekzcmd4DRC34oGXQqOxbJ%22%5D">Link to data sources.</a></h1>
-      <h1><a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2021">Full details.</a></h1>
+      <div className={GraphCSS.sourceData}>
+        <p>
+          Fossil CO2 emissions by country (territorial) by 1 million tonnes of CO2 from 1959-2020
+        </p>
+        <h1><a href="https://data.icos-cp.eu/licence_accept?ids=%5B%22lApekzcmd4DRC34oGXQqOxbJ%22%5D">Link</a> to data sources.</h1>
+        <h1><a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2021">Full details.</a></h1>
+      </div>
     </div>
   );
 }

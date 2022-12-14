@@ -10,7 +10,7 @@ const URL = "http://localhost:3001/10";
 
 function V6() {
   const [tasks, setTasks] = useState([]);
-  
+
   useEffect(() => {
     axios
       .get(URL)
@@ -23,7 +23,7 @@ function V6() {
       });
   }, []);
 
- 
+
   const data = {
     datasets: [
       {
@@ -42,7 +42,7 @@ function V6() {
   };
 
   const options = {
-    
+
     responsive: true,
     plugins: {
       legend: {
@@ -57,19 +57,19 @@ function V6() {
     scales: {
       y: {
         ticks: {
-            // Include a ppmv sign in the ticks
-            callback: function(value, index, ticks) {
-                return value + ' ppmv';
-            }
+          // Include a ppmv sign in the ticks
+          callback: function (value, index, ticks) {
+            return value + ' ppmv';
+          }
         },
         type: "linear",
         title: {
-            color: 'red',
-            display: true,
-            text: 'CO2 concnertation ppmv'
-          },
-        
-          
+          color: 'red',
+          display: true,
+          text: 'CO2 concnertation ppmv'
+        },
+
+
       },
       x: {
         min: -803918.87,
@@ -80,22 +80,24 @@ function V6() {
           AirAge: 'Airage',
         },
         title: {
-            color: 'red',
-            display: true,
-            text: 'Year'
-          },
+          color: 'red',
+          display: true,
+          text: 'Year'
+        },
         position: "bottom",
       },
-      
+
     },
   };
 
   return (
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
-      <p>Ice core 800k year composite study shows carbon dioxide data from over 800k years. </p>
-      <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt">Link to data sources.</a> </h1>
-      <h1> <a href="https://www.ncei.noaa.gov/access/paleo-search/study/17975">Full details.</a> </h1>
+      <div className={GraphCSS.sourceData}>
+        <p>Ice core 800k year composite study shows carbon dioxide data from over 800k years. </p>
+        <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt">Link</a> to data sources.</h1>
+        <h1> <a href="https://www.ncei.noaa.gov/access/paleo-search/study/17975">Full details.</a> </h1>
+      </div>
     </div>
   );
 }

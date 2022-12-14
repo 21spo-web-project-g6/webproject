@@ -14,7 +14,7 @@ export default function V1() {
   const [tasks1, setTasks1] = useState([]);
   const [tasks2, setTasks2] = useState([]);
   const [tasks3, setTasks3] = useState([]);
- 
+
   useEffect(() => {
     axios
       .get(URL1)
@@ -141,7 +141,7 @@ export default function V1() {
   };
 
   const options = {
-    
+
     responsive: true,
     plugins: {
       legend: {
@@ -156,8 +156,8 @@ export default function V1() {
     scales: {
       yAxes: {
         type: "linear",
-        
-          
+
+
       },
       xAxes: {
         title: {
@@ -169,11 +169,11 @@ export default function V1() {
         type: "time",
         displayFormats: {
           Year: 'Y',
-          
-          } ,
+
+        },
         position: "bottom",
       },
-      
+
     },
   };
 
@@ -181,9 +181,11 @@ export default function V1() {
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
 
-      <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link</a> to V1 data sources.</h1>
-      <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link</a> to V2 data sources.</h1>
-      <h1> <a href="https://www.nature.com/articles/nature03265">Full study</a> of V2 which includes data measurement description.</h1>
+      <div className={GraphCSS.sourceData}>
+        <h1> <a href="https://www.metoffice.gov.uk/hadobs/hadcrut5/">Link</a> to V1 data sources.</h1>
+        <h1> <a href="https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/moberg2005/nhtemp-moberg2005.txt">Link</a> to V2 data sources.</h1>
+        <h1> <a href="https://www.nature.com/articles/nature03265">Full study</a> of V2 which includes data measurement description.</h1>
+      </div>
     </div>
   );
 }
@@ -203,9 +205,9 @@ export default function V1() {
           </p>
         ))} */
 
-        /* {tasks3.map((task3) => (
-          <p>
-            {task3.Id} {task3.Year} {task3.T}
-            
-          </p>
-        ))} */
+/* {tasks3.map((task3) => (
+  <p>
+    {task3.Id} {task3.Year} {task3.T}
+    
+  </p>
+))} */

@@ -6,3 +6,8 @@ button{
     font-size: 1em;
     margin-top: 2em;
 }
+
+#title{
+    display: inline-block;
+    margin-left: 10px;
+}

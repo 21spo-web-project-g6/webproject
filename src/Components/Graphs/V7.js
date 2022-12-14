@@ -37,10 +37,10 @@ function V7() {
         alert(error.response.data.error);
       });
   }, []);
-  
-  
+
+
   const data = {
-  type:'Line',
+    type: 'Line',
     datasets: [
       {
         label: "Change in Global Average Surface Temperature (GAST) from present (0-5ka average)",
@@ -70,9 +70,9 @@ function V7() {
       },
       {
         label: "Early Homo erectus, direct ancestor of modern humans",
-        type:"scatter",
+        type: "scatter",
         data: [
-          {x: -1990000, y: -7}, 
+          { x: -1990000, y: -7 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -81,13 +81,13 @@ function V7() {
         showline: false,
         fill: false,
         pointRadius: 3,
-        
-      },     
+
+      },
       {
         label: "Earliest control of fire, by Homo erectus ",
-        type:"scatter",
+        type: "scatter",
         data: [
-          {x: -1500000, y: -7}, 
+          { x: -1500000, y: -7 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -99,9 +99,9 @@ function V7() {
       },
       {
         label: "rise of Homo heidelbergensis in Africa and Europe",
-        type:"scatter",
+        type: "scatter",
         data: [
-          {x: -700000, y: -7}, 
+          { x: -700000, y: -7 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -113,7 +113,7 @@ function V7() {
       },
       {
         label: "rise of Neanderthals Homo neanderthalensis across Europe",
-        data: [{x: -450000, y: -7},],
+        data: [{ x: -450000, y: -7 },],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
         showline: false,
@@ -123,8 +123,8 @@ function V7() {
       },
       {
         label: "Prelude to Earth’s Last Glacial Period",
-        type:"scatter",
-        data: [{x: -122500, y: -7},],
+        type: "scatter",
+        data: [{ x: -122500, y: -7 },],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
         showline: false,
@@ -134,8 +134,8 @@ function V7() {
       },
       {
         label: "Most recent reversal of Earth’s magnetic poles",
-        type:"scatter",
-        data: [{x: -39500, y: -7},],
+        type: "scatter",
+        data: [{ x: -39500, y: -7 },],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
         showline: false,
@@ -145,9 +145,9 @@ function V7() {
       },
       {
         label: "Climate shift contributing to megafaunal extinctions and human cultural changes ",
-        type:"scatter",
-        data: [        
-          {x: -10800, y: -6.8},         
+        type: "scatter",
+        data: [
+          { x: -10800, y: -6.8 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -158,9 +158,9 @@ function V7() {
       },
       {
         label: "Earliest use of coal as fuel ",
-        type:"scatter",
-        data: [      
-          {x: -2000, y: -6.6},         
+        type: "scatter",
+        data: [
+          { x: -2000, y: -6.6 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -171,9 +171,9 @@ function V7() {
       },
       {
         label: "Firing of natural gas in southwest China",
-        type:"scatter",
-        data: [        
-          {x:  290, y: -6.4},        
+        type: "scatter",
+        data: [
+          { x: 290, y: -6.4 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -184,9 +184,9 @@ function V7() {
       },
       {
         label: "Crop failures across the northern hemisphere caused by volcanic eruptions in Iceland",
-        type:"scatter",
-        data: [        
-          {x: 536, y: -6.2},        
+        type: "scatter",
+        data: [
+          { x: 536, y: -6.2 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -197,9 +197,9 @@ function V7() {
       },
       {
         label: "Formula for gunpowder, used for fire arrows, incendiary projectiles, smoke bombs",
-        type:"scatter",
-        data: [        
-          {x: 1044, y: -6},
+        type: "scatter",
+        data: [
+          { x: 1044, y: -6 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -210,9 +210,9 @@ function V7() {
       },
       {
         label: "Bubonic plague caused by the Black Death bacillus Yersinia pestis kills a third of the human population across much of Europe,",
-        type:"scatter",
-        data: [        
-          {x: 1346, y: -5.8},         
+        type: "scatter",
+        data: [
+          { x: 1346, y: -5.8 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -223,9 +223,9 @@ function V7() {
       },
       {
         label: "Mass production of spun textiles, mechanised by water power; coal-fired and steam-powered production of iron and steel",
-        type:"scatter",
-        data: [       
-          {x: 1780, y: -5.6},         
+        type: "scatter",
+        data: [
+          { x: 1780, y: -5.6 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -236,9 +236,9 @@ function V7() {
       },
       {
         label: "First commercially viable power stations, coal-fired",
-        type:"scatter",
-        data: [        
-          {x:  1882, y: -5.4},          
+        type: "scatter",
+        data: [
+          { x: 1882, y: -5.4 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -249,9 +249,9 @@ function V7() {
       },
       {
         label: "First nuclear power plant",
-        type:"scatter",
-        data: [ 
-          {x: 1954, y: -5.2},
+        type: "scatter",
+        data: [
+          { x: 1954, y: -5.2 },
         ],
         borderColor: "rgba(0, 200, 0, 1)",
         backgroundColor: "rgba(0, 200, 0, 1)",
@@ -260,18 +260,18 @@ function V7() {
         fill: false,
         pointRadius: 3,
       },
-      
+
     ],
   };
 
-  
+
 
   const options = {
     responsive: true,
     plugins: {
       tooltip: {
         callbacks: {
-          
+
         }
       },
       legend: {
@@ -281,8 +281,8 @@ function V7() {
         display: true,
         text: "V7+V10",
       },
-      
-      tooltips:{
+
+      tooltips: {
       }
     },
 
@@ -293,34 +293,34 @@ function V7() {
         min: -7.5,
         max: 2.5,
         title: {
-            display: true,
-            color: "red",
-            text: 'Temperature change'
-          }
+          display: true,
+          color: "red",
+          text: 'Temperature change'
+        }
       },
       y2: {
         type: "linear",
         position: "right",
-        min:140,
-        max:300,
+        min: 140,
+        max: 300,
         title: {
-            display: true,
-            color: "red",
-            text: 'Carbon dioxide (ppm)'
-          },   
+          display: true,
+          color: "red",
+          text: 'Carbon dioxide (ppm)'
+        },
       },
-      
+
       x: {
         type: "linear",
         position: "bottom",
-        min:-2000000,
-        max:2022,
-        
+        min: -2000000,
+        max: 2022,
+
         title: {
-            display: true,
-            color: "red",
-            text: 'Year'
-          },
+          display: true,
+          color: "red",
+          text: 'Year'
+        },
       },
     },
   };
@@ -328,11 +328,13 @@ function V7() {
   return (
     <div className={GraphCSS.container}>
       <Line options={options} data={data} />
-      <p>
-      V7 Evolution of global temperature over the past two million years + V10 Human Evolution and Activities
-     </p>
-      <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
-      <h1>Full <a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">details.</a></h1>
+      <div className={GraphCSS.sourceData}>
+        <p>
+          V7 Evolution of global temperature over the past two million years + V10 Human Evolution and Activities
+        </p>
+        <h1><a href="http://carolynsnyder.com/papers/Snyder_Data_Figures.zip">Link</a> to data sources.</h1>
+        <h1><a href="https://climate.fas.harvard.edu/files/climate/files/snyder_2016.pdf">Full details.</a></h1>
+      </div>
     </div>
   );
 }

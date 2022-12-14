@@ -28,6 +28,7 @@
     border-radius: 0.1em;
     color: white;
     background: var(--link3-c);
+    text-decoration: none;
 }
 
 .containerItem a:hover {

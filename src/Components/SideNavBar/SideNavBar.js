@@ -11,16 +11,21 @@ function SideNavBar() {
       <Sidebar
         defaultCollapsed={true}
         collapsedWidth={'0px'}
-        width={'270px'}
+        width={'240px'}
         rootStyles={{
           [`.${sidebarClasses.container}`]: {
+            backgroundColor: "white",
+            fontSize: "1.5em"
           },
         }}
       >
         <Menu>
           {SidebarData.map((item, index) => {
             return (
-              <MenuItem routerLink={<Link to={item.path} />} key={index}>{item.icon}{item.title}</MenuItem>
+              <MenuItem routerLink={<Link to={item.path} />} key={index}>
+                {item.icon}
+                <div id="title">{item.title}</div>
+              </MenuItem>
             )
           })}
         </Menu>
